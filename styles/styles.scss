@@ -2,8 +2,18 @@
 
 $blue: #0c3c8e;
 $light_blue: #14b5f0;
+$black: #05001a;
+$tablet_bp: 768px;
+$mobile_bp: 400px;
+$small_screen: 990px;
 
-@mixin sys_font ($weight:700, $size: 10px, $color:"black", $line:1.1, $spacing: 1px) {
+@mixin sys_font(
+  $weight: 700,
+  $size: 10px,
+  $color: 'black',
+  $line: 1.1,
+  $spacing: 1px
+) {
   font-weight: $weight;
   font-style: normal;
   font-family: 'Asap', sans-serif;
@@ -13,7 +23,7 @@ $light_blue: #14b5f0;
   letter-spacing: $spacing;
 }
 
-@mixin btn ($color:"blue", $hover_color:"yellow") {
+@mixin btn($color: 'blue', $hover_color: 'yellow') {
   color: white;
   padding: 15px 35px;
   text-decoration: none;
@@ -28,7 +38,7 @@ $light_blue: #14b5f0;
   }
 }
 
-@mixin background_img ($path) {
+@mixin background_img($path) {
   background-image: url($path);
   background-position: top;
   background-repeat: no-repeat;
@@ -39,26 +49,46 @@ $light_blue: #14b5f0;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   height: 100vh;
-  .header{
+  .header {
     display: grid;
     grid-template-rows: repeat(2, auto);
-    .header-info{
+    .header-info {
       margin: 0 15%;
       display: grid;
       grid-gap: 30px;
       grid-template-columns: 1fr auto auto;
       grid-auto-flow: column;
+      @media screen and (max-width: $tablet_bp) {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        font-size: 25px;
+        grid-gap: 10px;
+        margin: 10px 0px;
+        padding-left: 25%;
+      }
       .logo {
         display: grid;
         font-family: 'Open Sans', sans-serif;
         grid-template-columns: auto 1fr;
         grid-gap: 20px;
         align-content: center;
-        img{
-          width: 100%;
+        @media screen and (max-width: $tablet_bp) {
+          font-size: 25px;
+        }
+        img {
+          min-width: 100%;
         }
         h4 {
           align-self: center;
+          font-weight: 700;
+          @media screen and (max-width: $tablet_bp) {
+            font-size: 25px;
+          }
+        }
+      }
+      .email {
+        @media screen and (max-width: $tablet_bp) {
+          // padding-left: 25%;
         }
       }
       .email,
@@ -68,23 +98,32 @@ $light_blue: #14b5f0;
         grid-template-columns: auto 1fr;
         grid-auto-flow: column;
         align-items: center;
+        @media screen and (max-width: $tablet_bp) {
+          // padding-left: 30%;
+        }
         div {
           display: grid;
           font-family: 'Open Sans', sans-serif;
         }
-        span{
+        span {
           padding: 15px;
           border: 1px solid lightgray;
           border-radius: 50%;
           color: grey;
           font-size: 20px;
+          @media screen and (max-width: $tablet_bp) {
+            padding: 22px;
+          }
         }
       }
     }
     .header-menu {
+      // @media screen and (max-width: $tablet_bp) {
+      //   padding: 60px 15px;
+      // }
       display: grid;
       grid-gap: 3em;
-      grid-template-columns:1fr repeat(5, auto) 1fr;
+      grid-template-columns: 1fr repeat(5, auto) 1fr;
       background-color: $blue;
       padding: 15px 0;
       font-size: 12px;
@@ -105,7 +144,7 @@ $light_blue: #14b5f0;
       }
     }
   }
-  
+
   .slider {
     background-image: url(../images/slider/slider-3.jpg);
     background-position: top;
@@ -117,58 +156,72 @@ $light_blue: #14b5f0;
     min-height: 600px;
     align-content: center;
     .slider-text {
-      display:grid;
+      display: grid;
       p {
         max-width: 400px;
       }
       p:nth-child(1) {
         text-transform: uppercase;
-        font-weight: 700;
-        font-style: normal;
-        font-family: 'Asap', sans-serif;
-        color: #05001a;
-        font-size: 18px;
-        line-height: 1.4;
-        letter-spacing: 1px;
+        @include sys_font($size: 18px);
       }
       p:nth-child(2) {
-        font-weight: 700;
-        font-style: normal;
-        font-family: 'Asap', sans-serif;
-        color: #05001a;
-        font-size: 55px;
-        line-height: 1;
-        letter-spacing: -2px;
+        @include sys_font(700, 55px, $black, 1, -2px);
         span {
           color: $blue;
         }
       }
       p:nth-child(3) {
-        font-weight: 400;
-        font-style: normal;
-        font-family: 'Open Sans', sans-serif;
-        color: #05001a;
-        font-size: 15px;
-        line-height: 1.4;
-        letter-spacing: 0px;
+        @include sys_font(400, 15px, $black, 1.4, 0px);
         margin-bottom: 60px;
       }
       .quote-btn {
-        @include btn($blue, $light_blue )
+        @include btn($blue, $light_blue);
       }
     }
   }
 
   .content {
+    .get_estimate {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+      @media screen and (max-width: $small_screen) {
+        grid-template-columns: 1fr;
+      }
+      img {
+        @media screen and (max-width: $small_screen) {
+          max-width: 50%;
+        }
+        width: 70%;
+        justify-self: center;
+      }
+      .get_estimate_text {
+        margin: 150px 0px;
+        @media screen and (max-width: $tablet_bp) {
+          grid-template-columns: auto;
+          margin: 45px 10px;
+        }
+        p:nth-child(1) {
+          @include sys_font(900, 45px, $black, 1.1, -1px);
+        }
+      }
+    }
     .services {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      @media screen and (max-width: $tablet_bp) {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+      }
       .services_list_block {
         padding: 150px 15px;
         background-image: url(../images/services/bg.jpg);
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
+        @media screen and (max-width: $tablet_bp) {
+          padding: 60px 15px;
+        }
         .services_list {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -180,36 +233,40 @@ $light_blue: #14b5f0;
             display: grid;
             // grid-gap: 15px;
             grid-template-columns: auto 1fr;
-            margin-top : 15px;
+            margin-top: 15px;
             div:nth-child(2) {
               margin: 0 15px;
             }
-            img{
+            img {
               min-width: 45px;
               max-width: 45px;
             }
             .service_title {
-              @include sys_font(700, 15px, "black", 1.4, 1px);
+              @include sys_font(700, 15px, 'black', 1.4, 1px);
               margin: 0;
               padding: 0;
             }
             .service_desc {
               grid-column: span 2;
               margin-top: 15px;
-              @include sys_font(400, 12px, "black", 1.6, 0px);
+              @include sys_font(400, 14px, 'black', 1.6, 0px);
             }
           }
         }
       }
       .services_title_block {
-        @include background_img("../images//services/bg_title.jpg");
+        @include background_img('../images//services/bg_title.jpg');
         padding: 150px 30px;
         color: white;
-        p:nth-child(1){
-          @include sys_font(700, 40px, "white", 1.1, -1px);
+        @media screen and (max-width: $tablet_bp) {
+          padding: 60px 15px;
+          order: -1;
+        }
+        p:nth-child(1) {
+          @include sys_font(700, 40px, 'white', 1.1, -1px);
         }
         p:nth-child(2) {
-          @include sys_font(400, 14px, "white", 1.6, 0px);
+          @include sys_font(400, 14px, 'white', 1.6, 0px);
           margin-bottom: 50px;
           max-width: 600px;
         }
@@ -217,7 +274,6 @@ $light_blue: #14b5f0;
           @include btn($light_blue, $blue);
         }
       }
-      
     }
   }
 }
