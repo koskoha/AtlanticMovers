@@ -201,9 +201,11 @@
         @media screen and (max-width: $small_screen) {
           grid-template-columns: auto;
           margin: 60px 20px;
+          margin-top: 0px;
         }
         p:nth-child(1) {
           @include sys_font(900, 45px, $black, 1.1, -1px);
+          margin-top: 10px;
         }
         p:nth-child(2) {
           @include sys_font(400, 16px, $black, 1.7, 0px);
