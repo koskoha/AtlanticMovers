@@ -165,6 +165,9 @@
         span {
           color: $blue;
         }
+        @media screen and (max-width: $tablet_bp) {
+          font-size: 40px;
+        }
       }
       p:nth-child(3) {
         @include sys_font(400, 15px, $black, 1.4, 0px);
