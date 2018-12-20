@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.collapsible');
-    var options = {};
+    var options = {
+      accordion:true
+    };
     var instances = M.Collapsible.init(elems, options);
   });
