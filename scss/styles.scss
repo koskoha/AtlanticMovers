@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Asap|Open+Sans|Abril+Fatface|Racing+Sans+One|Ultra');
-@import "_cust_variables";
+@import '_cust_variables';
 
 @mixin sys_font(
   $weight: 700,
@@ -109,7 +109,6 @@
           color: grey;
           font-size: 25px;
           @media screen and (max-width: $tablet_bp) {
-            padding: 22px;
           }
         }
       }
@@ -131,12 +130,26 @@
         font-weight: 700;
         font-style: normal;
         color: white;
-        padding: 15px 10px;
+        padding: 16px 10px;
         text-decoration: none;
         background-color: transparent;
         transition: background-color 0.2s ease-out;
         &:hover {
           background-color: $light_blue;
+        }
+      }
+      .free_quote {
+        background-color: transparent;
+        transition: background-color 0.2s ease-out;
+        background-color: $light_blue;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: white;
+        padding: 16px 10px;
+        text-decoration: none;
+        &:hover {
+          background-color: $blue;
         }
       }
     }
@@ -310,7 +323,7 @@
         grid-template-columns: 1fr;
         grid-auto-flow: row;
       }
-      .guarantee_header{
+      .guarantee_header {
         grid-column: span 2;
         text-align: center;
         @media screen and (max-width: $tablet_bp) {
@@ -319,10 +332,10 @@
       }
       .guarantee_header {
         margin: 25px;
-        p:nth-child(1){
+        p:nth-child(1) {
           @include sys_font(700, 30px, $black, 1.1, -1px);
         }
-        p:nth-child(2){
+        p:nth-child(2) {
           @include sys_font(400, 20px, $black, 1, -1px);
         }
       }
@@ -346,15 +359,15 @@
     .contact_us {
       display: grid;
       grid-template-columns: auto 1fr;
-      padding:50px 10%;
-      background-image: url("../images/contact_us.jpg");
+      padding: 50px 10%;
+      background-image: url('../images/contact_us.jpg');
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
       color: white;
       @media screen and (max-width: $tablet_bp) {
         grid-template-columns: 1fr;
-        padding:25px 1%;
+        padding: 25px 1%;
       }
       .contact_us_header {
         padding: 100px 60px;
@@ -365,7 +378,7 @@
           justify-content: center;
         }
         .contact_us_title {
-          @include sys_font(700, 40px, "white", 1.1, -1px);
+          @include sys_font(700, 40px, 'white', 1.1, -1px);
         }
         .contact_email,
         .contact_phone {
@@ -374,12 +387,12 @@
           grid-template-columns: auto 1fr;
           grid-auto-flow: column;
           align-items: center;
-          margin: 15px 0px;;
+          margin: 15px 0px;
           div {
             b {
-              @include sys_font(700, 20px, "white", 1.4, 1px);
+              @include sys_font(700, 20px, 'white', 1.4, 1px);
             }
-            @include sys_font(400, 15px, "white", 1.4, 0px);
+            @include sys_font(400, 15px, 'white', 1.4, 0px);
             display: grid;
           }
           span {
@@ -397,7 +410,7 @@
           text-align: center;
           background-color: $light_blue;
           padding: 15px;
-          @include sys_font(700, 25px, "white", 1.1, -1px);
+          @include sys_font(700, 25px, 'white', 1.1, -1px);
         }
         padding: 60px 20px;
         form {
@@ -409,11 +422,18 @@
             font-size: 12px;
           }
           .submit_btn {
-            @include btn($blue, $light_blue );
+            @include btn($blue, $light_blue);
             padding: 10px 35px;
           }
         }
       }
     }
+  }
+}
+
+nav {
+  background-color: $blue;
+  .brand-logo {
+    font-family: 'Racing Sans One', cursive;
   }
 }
