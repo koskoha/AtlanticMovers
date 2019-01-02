@@ -431,6 +431,10 @@
             // color: $black;
             font-size: 12px;
           }
+          .form_section {
+            text-align: center;
+            @include sys_font(600, 20px, $light_blue, 1.1, 1px);
+          }
           .submit_btn {
             @include btn($blue, $light_blue);
             padding: 10px 35px;
@@ -445,7 +449,7 @@
       background-size: cover;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      padding: 5% 0;
+      padding: 3% 0;
       @media screen and (max-width: $tablet_bp) {
         grid-template-columns: 1fr;
         padding: 25px 2%;
@@ -463,6 +467,7 @@
           margin: 20px;
           .collapsible-header {
             background-color: $blue;
+            border: none;
             @include sys_font(700, 17px, white, 0, 1px);
             align-items: center;
             text-transform: uppercase;
@@ -478,6 +483,8 @@
 
   .footer {
     background-color: $grey;
+    display: grid;
+    justify-content: center;
     .footer_content {
       text-align: center;
       padding-top: 30px;
@@ -493,9 +500,12 @@
       }
       max-width: 70vw;
     }
+    .footer_section {
+      @include sys_font(700, 15px, white, 1.7, 0px);
+    }
     .footer_line {
-      border-top: 1px solid #888;
-      padding: 15px;
+      border-top: 2px solid $light_blue;
+      padding-top: 15px;
     }
     .copyright {
       grid-column: span 4;

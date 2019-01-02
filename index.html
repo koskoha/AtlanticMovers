@@ -65,11 +65,19 @@
         </div>
         <div class="header-menu hide-on-med-and-down">
           <div></div>
-          <div><a href="#" class="navLink">our services</a></div>
-          <div><a href="#" class="navLink">guareantee</a></div>
-          <div><a href="#" class="navLink">need to know</a></div>
-          <div><a href="#" class="navLink">contact us</a></div>
-          <div><a href="#" class="free_quote ">free quote</a></div>
+          <div>
+            <a href="index.html#services_nav" class="navLink">our services</a>
+          </div>
+          <div>
+            <a href="index.html#guarantee_nav" class="navLink">guareantee</a>
+          </div>
+          <div>
+            <a href="index.html#faq_nav" class="navLink">need to know</a>
+          </div>
+          <!-- <div><a href="index.html" class="navLink">contact us</a></div> -->
+          <div>
+            <a href="index.html#quote" class="free_quote ">free quote</a>
+          </div>
           <div></div>
         </div>
         <div class="hide-on-med-and-up show-on-medium-and-down">
@@ -80,10 +88,10 @@
                 <i class="material-icons">menu</i>
               </a>
               <ul class="sidenav" id="mobile-demo">
-                <li><a href="sass.html">Our Services</a></li>
-                <li><a href="badges.html">Guarantee</a></li>
-                <li><a href="mobile.html">Need To Know</a></li>
-                <li><a href="collapsible.html">Contact Us</a></li>
+                <li><a href="index.html#services_nav">Our Services</a></li>
+                <li><a href="index.html#guarantee_nav">Guarantee</a></li>
+                <li><a href="index.html#faq_nav">Need To Know</a></li>
+                <li><a href="index.html#quote">Free Quote</a></li>
               </ul>
             </div>
           </nav>
@@ -100,7 +108,7 @@
             call MoveCo. We make it easy on you and faster than the other.
           </p>
           <div class="slider-btn">
-            <a href="#" class="quote-btn">Free Quote </a>
+            <a href="index.html#quote" class="quote-btn">Free Quote </a>
           </div>
         </div>
       </div>
@@ -139,13 +147,13 @@
                   <i class="material-icons">check_circle</i> FLAT RATE FEES
                 </li>
               </ul>
-              <a class="quote_btn" href="#">Get Free Quote</a>
+              <a class="quote_btn" href="index.html#quote">Get Free Quote</a>
             </div>
           </div>
         </div>
 
         <!-- Content => Services -->
-        <div class="services">
+        <div class="services" id="services_nav">
           <div class="services_list_block">
             <div class="services_list">
               <div class="service">
@@ -198,12 +206,14 @@
               nec. Pellentesque libero elit, amet consectetur, placerat lobortis
               tellus.
             </p>
-            <div><a href="#" class="service_btn">Contact Us</a></div>
+            <div>
+              <a href="index.html#quote" class="service_btn">Contact Us</a>
+            </div>
           </div>
         </div>
 
         <!-- Content => Guarantee -->
-        <div class="guarantee">
+        <div class="guarantee" id="guarantee_nav">
           <div class="guarantee_header">
             <p>WHAT WE GUARANTEE</p>
             <p>OUR MISSION IS TO MOVE YOU, NOT JUST YOUR BOXES.</p>
@@ -252,7 +262,7 @@
         </div>
 
         <!-- Content => Contact Us -->
-        <div class="contact_us">
+        <div class="contact_us" id="quote">
           <div class="contact_us_header">
             <div class="contact_us_title">Contact Us</div>
             <div>
@@ -273,56 +283,106 @@
               <form class="col s12">
                 <div class="row">
                   <div class="input-field col s6">
-                    <input id="first_name" type="text" class="validate" />
-                    <label for="first_name">Full Name</label>
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="name" type="text" class="validate" />
+                    <label for="name">Full Name</label>
                   </div>
                   <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate" />
-                    <label for="last_name">Phone</label>
+                    <i class="material-icons prefix">phone</i>
+                    <input id="phone" type="text" class="validate" />
+                    <label for="phone">Phone</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s6">
-                    <input id="password" type="text" class="validate" />
-                    <label for="password">Email</label>
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate" />
+                    <label for="email">Email</label>
                   </div>
                   <div class="input-field col s6">
+                    <i class="material-icons prefix">event_available</i>
                     <input id="move_date" type="text" class="datepicker" />
                     <label for="move_date">Move Date</label>
                   </div>
                 </div>
+                <div class="form_section">Pick Up:</div>
                 <div class="row">
                   <div class="input-field col s6">
+                    <i class="material-icons prefix">home</i>
                     <select>
                       <option value="" disabled selected>Move Size</option>
-                      <option value="1">Piece Delivery </option>
-                      <option value="1">Loading / Unloading </option>
-                      <option value="1">Studio</option>
-                      <option value="2">Apartment</option>
-                      <option value="3">Townhouse</option>
-                      <option value="3">House</option>
-                      <option value="3">Storage</option>
-                      <option value="3">Office</option>
+                      <option value="piece">Piece Delivery </option>
+                      <option value="loading/unloading"
+                        >Loading / Unloading
+                      </option>
+                      <option value="studio">Studio</option>
+                      <option value="apartment">Apartment</option>
+                      <option value="townhouse">Townhouse</option>
+                      <option value="house">House</option>
+                      <option value="storage">Storage</option>
+                      <option value="office">Office</option>
                     </select>
-                    <label for="email">Move Size</label>
+                    <label for="move_size">Move Size:</label>
                   </div>
                   <div class="input-field col s6">
-                    <input id="email" type="text" class="validate" />
-                    <label for="email">How Many Bedrooms</label>
+                    <i class="material-icons prefix">local_hotel</i>
+                    <input id="bedrooms" type="text" class="validate" />
+                    <label for="bedrooms">How Many Bedrooms</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s6">
-                    <input id="email" type="text" class="validate" />
-                    <label for="email">Moving From (Zip)</label>
+                    <i class="material-icons prefix">room</i>
+                    <input id="address_from" type="text" class="validate" />
+                    <label for="address_from">Address</label>
                   </div>
                   <div class="input-field col s6">
-                    <input id="email" type="text" class="validate" />
-                    <label for="email">Moving To (Zip)</label>
+                    <i class="material-icons prefix">location_city</i>
+                    <input id="city_from" type="text" class="validate" />
+                    <label for="city_from">City</label>
                   </div>
                 </div>
-                <div class="">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">map</i>
+                    <input id="state_from" type="text" class="validate" />
+                    <label for="state_from">State</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">room</i>
+                    <input id="zip_from" type="text" class="validate" />
+                    <label for="zip_from">Zip</label>
+                  </div>
+                </div>
+                <div class="form_section">Delivery:</div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">room</i>
+                    <input id="address_to" type="text" class="validate" />
+                    <label for="address_to">Address</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">location_city</i>
+                    <input id="city_to" type="text" class="validate" />
+                    <label for="city_to">City</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">map</i>
+                    <input id="state_to" type="text" class="validate" />
+                    <label for="state_to">State</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">room</i>
+                    <input id="zip_to" type="text" class="validate" />
+                    <label for="zip_to">Zip</label>
+                  </div>
+                </div>
+                <div class="form_section">Additional Comments:</div>
+                <div class="row">
                   <div class="input-field col s12">
+                    <i class="material-icons prefix">comment</i>
                     <textarea
                       id="comment"
                       class="materialize-textarea"
@@ -341,7 +401,7 @@
         </div>
 
         <!-- Content => FAQ -->
-        <div class="faq">
+        <div class="faq" id="faq_nav">
           <div></div>
           <div>
             <div class="faq_header">Need To Know</div>
@@ -475,14 +535,14 @@
         <div class="footer_content">
           <div>
             <img src="images/logo_grey.png" />
-            <p>GO FAST MOVERS</p>
+            <p class="footer_section">GO FAST MOVERS</p>
           </div>
           <div>
-            ACCEPTANCE
+            <span class="footer_section"> WE ACCEPT </span>
             <p class="footer_line"><img src="./images/pay.png" alt="" /></p>
           </div>
           <div>
-            STAY CONNECTED
+            <span class="footer_section"> STAY CONNECTED </span>
             <p class="footer_line">
               <a href="google.com"
                 ><img src="./images/sosial/google.png" alt=""
@@ -496,7 +556,7 @@
             </p>
           </div>
           <div>
-            GET IN TOUCH
+            <span class="footer_section"> GET IN TOUCH </span>
             <p class="footer_line">
               <i class="material-icons">local_phone</i> 202-650-9228
             </p>
