@@ -52,11 +52,13 @@
       grid-gap: 30px;
       grid-template-columns: 1fr auto auto;
       grid-auto-flow: column;
+      min-width: 800px;
       @media screen and (max-width: $tablet_bp) {
         grid-template-columns: 1fr;
         grid-auto-flow: row;
         font-size: 25px;
         grid-gap: 10px;
+        min-width: auto;
       }
       .logo {
         display: grid;
@@ -205,9 +207,10 @@
       .estimate_img {
         display: grid;
         align-items: end;
+        justify-items: center;
         img {
           margin-top: 20px;
-          width: 100%;
+          width: 40vh;
           @media screen and (max-width: $tablet_bp) {
             margin-top: 15px;
             max-width: 50%;
@@ -216,6 +219,7 @@
       }
       .get_estimate_text {
         margin: 150px 0px;
+        min-width: 350px;
         @media screen and (max-width: $small_screen) {
           grid-template-columns: auto;
           margin: 60px 20px;
@@ -387,7 +391,7 @@
           justify-content: center;
         }
         .contact_us_title {
-          @include sys_font(700, 40px, 'white', 1.1, -1px);
+          @include sys_font(700, 50px, 'white', 1.1, -1px);
         }
         .contact_email,
         .contact_phone {
@@ -399,9 +403,9 @@
           margin: 15px 0px;
           div {
             b {
-              @include sys_font(700, 20px, 'white', 1.4, 1px);
+              @include sys_font(700, 30px, 'white', 1.4, 1px);
             }
-            @include sys_font(400, 15px, 'white', 1.4, 0px);
+            @include sys_font(400, 25px, 'white', 1.4, 0px);
             display: grid;
           }
           span {
@@ -427,9 +431,25 @@
           background-color: rgba(255, 255, 255, 1);
           color: $black;
           padding: 20px;
+          .msgSubmitSuccess {
+            @include sys_font(700, 16px, #16be45, 1.1, 0px);
+            border: 1px solid #16be45;
+            text-align: center;
+            padding: 15px;
+            margin: 15px;
+          }
+          .msgSubmitFail {
+            color: red;
+            border: 1px solid red;
+          }
           label {
-            // color: $black;
-            font-size: 12px;
+            font-size: 20px;
+            @media screen and (max-width: $tablet_bp) {
+              font-size: 22px;
+            }
+          }
+          i {
+            color: #7c7070;
           }
           .form_section {
             text-align: center;

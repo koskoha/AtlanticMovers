@@ -65,18 +65,17 @@ $(document).ready(function() {
     const stateTo = $('#state_to').val();
     const zipTo = $('#zip_to').val();
     const comments = $('#comment').val();
-    console.log("name=" + name + "   phone=" + phone+ "   email=" + email+ "   move_date=" + moveDate+ "   move_size=" + moveSize+ "   bedrooms=" + bedrooms+ "    address_from=" + addressFrom+ "   city_from=" + cityFrom+ "   state_from=" + stateFrom+ "   zip_from=" + zipFrom+ "   address_to=" + addressTo+ "   city_to=" + cityTo+ "   state_to=" + stateTo+ "   zip_to=" + zipTo + "   comments=" + comments);
     $.ajax({
         type: "POST",
         url: "https://script.google.com/macros/s/AKfycbzFIROjuJpK9lb0Wi0phjzAnYxgQxjGHlhwYkL61arZcFXQLtZs/exec",
         data: "name=" + name + "&phone=" + phone+ "&email=" + email+ "&move_date=" + moveDate+ "&move_size=" + moveSize+ "&bedrooms=" + bedrooms+ "&address_from=" + addressFrom+ "&city_from=" + cityFrom+ "&state_from=" + stateFrom+ "&zip_from=" + zipFrom+ "&address_to=" + addressTo+ "&city_to=" + cityTo+ "&state_to=" + stateTo+ "&zip_to=" + zipTo + "&comments=" + comments,
         success: function(resp) {
             console.log(resp);
-            if (resp.result == "success") {
+            if (resp.result !== "success") {
                 formSuccess();
             } else {
                 formError();
-                submitMSG(false, resp.data.message);
+                submitMSG(false, "There was some problem with submitting your request. Please call us at 202-650-9228 and we would be more than happy to help you get the right quote.");
             }
         }
     });
@@ -84,7 +83,7 @@ $(document).ready(function() {
 
   function formSuccess() {
     $("#estimate_form")[0].reset();
-    submitMSG(true, "Message Sent!");
+    submitMSG(true, "We received you quote request and will reach back to you with you quote shortly!");
   }
 
   function formError() {
@@ -96,9 +95,9 @@ $(document).ready(function() {
 
   function submitMSG(valid, msg) {
     if (valid) {
-        var msgClasses = "h3 text-center fadeInUp animated text-success";
+        var msgClasses = "h3 text-center fadeInUp animated text-success msgSubmitSuccess";
     } else {
-        var msgClasses = "h3 text-center text-danger";
+        var msgClasses = "h3 text-center text-danger msgSubmitSuccess msgSubmitFail";
     }
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
   }

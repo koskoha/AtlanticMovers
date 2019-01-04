@@ -163,7 +163,8 @@
                   <p class="service_title">LONG DISTANCE / LOCAL</p>
                   <p class="service_desc">
                     We offer packing equipment, packing instructions and tips as
-                    well as labor and support to make your move efficient.
+                    well as labor and support to make your local or long
+                    distance move efficient.
                   </p>
                 </div>
               </div>
@@ -172,8 +173,8 @@
                 <div>
                   <p class="service_title">BOX DELIVERY</p>
                   <p class="service_desc">
-                    We offer packing equipment, packing instructions and tips as
-                    well as labor and support to make your move efficient.
+                    We can deliver all necessary packing materials for your
+                    move, right to you door at any convenient for you time.
                   </p>
                 </div>
               </div>
@@ -182,8 +183,8 @@
                 <div>
                   <p class="service_title">COMMERCIAL / OFFICE</p>
                   <p class="service_desc">
-                    Whether it’s just moving floors or across the country, our
-                    movers are experienced and trained to effectively handle.
+                    At Go Fast Movers, we have successfully relocated local
+                    businesses that move our economy. Let us help you too.
                   </p>
                 </div>
               </div>
@@ -192,8 +193,8 @@
                 <div>
                   <p class="service_title">LOADING / UNLOADING</p>
                   <p class="service_desc">
-                    We have all the packing supplies, including boxes
-                    specifically for clothes, pictures as well as packing tape.
+                    We can provide our experienced and trained movers with all
+                    necessary equipment to help you load and unload any vehicle.
                   </p>
                 </div>
               </div>
@@ -225,9 +226,8 @@
             <div>
               <p class="guarantee_title">ON TIME SERVICE</p>
               <p class="guarantee_desc">
-                All our team members are high-qualified, educated and skilled
-                agents. All of them are being trained according to the
-                technologies.
+                No matter what your moving crew will do their best to be at your
+                address in sceduled time.
               </p>
             </div>
           </div>
@@ -246,18 +246,20 @@
             <div>
               <p class="guarantee_title">UPFRONT RATES</p>
               <p class="guarantee_desc">
-                We are a company providing a wide range of maintenance and many
-                other services needed to make your life comfortable and happy.
+                Your hourly rate depends on the number of crew members necessary
+                to safely and efficiently complete your move. We do not charge
+                any last minute or hidden fees (fuel, stairs, mileage charges,
+                etc)
               </p>
             </div>
           </div>
           <div class="guarantee_item">
             <div><img src="./images/guarantee/truck.png" alt="" /></div>
             <div>
-              <p class="guarantee_title">CLEAN SHINY TRUCKS</p>
+              <p class="guarantee_title">MOVING READY TRUCKS</p>
               <p class="guarantee_desc">
-                we are a company providing a wide range of maintenance and many
-                other services needed to make your life comfortable and happy.
+                All of our trucks are equipped with dollies, blankets, and all
+                the other materials necessary to make your move safe and smooth.
               </p>
             </div>
           </div>
@@ -288,7 +290,6 @@
                 role="form"
                 data-toggle="validator"
               >
-                <div id="msgSubmit" class="h3 text-center hidden"></div>
                 <div class="row">
                   <div class="input-field col s6">
                     <i class="material-icons prefix">account_circle</i>
@@ -297,7 +298,7 @@
                   </div>
                   <div class="input-field col s6">
                     <i class="material-icons prefix">phone</i>
-                    <input id="phone" type="text" class="validate" />
+                    <input id="phone" type="text" class="validate" required />
                     <label for="phone">Phone</label>
                   </div>
                 </div>
@@ -309,7 +310,12 @@
                   </div>
                   <div class="input-field col s6">
                     <i class="material-icons prefix">event_available</i>
-                    <input id="move_date" type="text" class="datepicker" />
+                    <input
+                      id="move_date"
+                      type="text"
+                      class="datepicker"
+                      required
+                    />
                     <label for="move_date">Move Date</label>
                   </div>
                 </div>
@@ -318,7 +324,7 @@
                   <div class="input-field col s6">
                     <i class="material-icons prefix">home</i>
                     <select id="form_select">
-                      <option value="" disabled selected>Move Size</option>
+                      <option value="" disabled selected></option>
                       <option value="piece">Piece Delivery </option>
                       <option value="loading/unloading"
                         >Loading / Unloading
@@ -358,7 +364,12 @@
                   </div>
                   <div class="input-field col s6">
                     <i class="material-icons prefix">room</i>
-                    <input id="zip_from" type="text" class="validate" />
+                    <input
+                      id="zip_from"
+                      type="text"
+                      class="validate"
+                      required
+                    />
                     <label for="zip_from">Zip</label>
                   </div>
                 </div>
@@ -383,7 +394,7 @@
                   </div>
                   <div class="input-field col s6">
                     <i class="material-icons prefix">room</i>
-                    <input id="zip_to" type="text" class="validate" />
+                    <input id="zip_to" type="text" class="validate" required />
                     <label for="zip_to">Zip</label>
                   </div>
                 </div>
@@ -405,6 +416,7 @@
                     SUBMIT
                   </button>
                 </div>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
               </form>
             </div>
           </div>
