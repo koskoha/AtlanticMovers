@@ -71,7 +71,7 @@ $(document).ready(function() {
         data: "name=" + name + "&phone=" + phone+ "&email=" + email+ "&move_date=" + moveDate+ "&move_size=" + moveSize+ "&bedrooms=" + bedrooms+ "&address_from=" + addressFrom+ "&city_from=" + cityFrom+ "&state_from=" + stateFrom+ "&zip_from=" + zipFrom+ "&address_to=" + addressTo+ "&city_to=" + cityTo+ "&state_to=" + stateTo+ "&zip_to=" + zipTo + "&comments=" + comments,
         success: function(resp) {
             console.log(resp);
-            if (resp.result !== "success") {
+            if (resp.result === "success") {
                 formSuccess();
             } else {
                 formError();
