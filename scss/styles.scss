@@ -234,6 +234,10 @@
         }
         ul {
           list-style: none;
+          @media screen and (max-width: $small_screen) {
+            display: flex;
+            justify-content: space-around;
+          }
           i {
             font-size: 20px;
             position: relative;
@@ -249,6 +253,9 @@
           position: relative;
           top: 25px;
           @include btn($blue, $light_blue);
+          @media screen and (max-width: $small_screen) {
+            left: 40%;
+          }
         }
       }
     }
