@@ -441,6 +441,8 @@
           select {
             width: 85%;
             margin-left: 40px;
+            font-size: 25px;
+            color: grey;
           }
           .msgSubmitSuccess {
             @include sys_font(700, 16px, #16be45, 1.1, 0px);
