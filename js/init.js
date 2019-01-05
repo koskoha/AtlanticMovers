@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.datepicker');
     // var contact_us = document.querySelectorAll('.contact_us');
@@ -101,4 +102,12 @@ $(document).ready(function() {
     }
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
   }
+
+
 });
+
+
+// **************************************************************************************
+
+
+

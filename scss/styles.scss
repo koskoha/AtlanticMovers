@@ -438,6 +438,10 @@
           background-color: rgba(255, 255, 255, 1);
           color: $black;
           padding: 20px;
+          select {
+            width: 85%;
+            margin-left: 40px;
+          }
           .msgSubmitSuccess {
             @include sys_font(700, 16px, #16be45, 1.1, 0px);
             border: 1px solid #16be45;
