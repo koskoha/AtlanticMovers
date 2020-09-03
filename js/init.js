@@ -1,50 +1,50 @@
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.datepicker');
-    // var contact_us = document.querySelectorAll('.contact_us');
-    var options = {
-        minDate: new Date()
-    }
-    var instances = M.Datepicker.init(elems, options);
-  });
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.datepicker');
+  // var contact_us = document.querySelectorAll('.contact_us');
+  var options = {
+    minDate: new Date()
+  }
+  var instances = M.Datepicker.init(elems, options);
+});
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('select');
   var options = {
-      
+
   }
   var instances = M.FormSelect.init(elems, options);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.collapsible');
   var options = {
-    accordion:true,
+    accordion: true,
     inDuration: 700,
     outDuration: 700,
   };
   var instances = M.Collapsible.init(elems, options);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.sidenav');
   var options = {}
   var instances = M.Sidenav.init(elems, options);
 });
 
 
-$(document).ready(function() {
+$(document).ready(function () {
   "use strict";
 
-  $("#estimate_form").on("submit", function(event) {
+  $("#estimate_form").on("submit", function (event) {
     if (event.isDefaultPrevented()) {
-        // handle the invalid form...
-        formError();
-        submitMSG(false, "Did you fill in the form properly?");
+      // handle the invalid form...
+      formError();
+      submitMSG(false, "Did you fill in the form properly?");
     } else {
-        // everything looks good!
-        event.preventDefault();
-        submitForm();
+      // everything looks good!
+      event.preventDefault();
+      submitForm();
     }
   });
 
@@ -67,19 +67,18 @@ $(document).ready(function() {
     const zipTo = $('#zip_to').val();
     const comments = $('#comment').val();
     $.ajax({
-        type: "POST",
-        url: "https://script.google.com/macros/s/AKfycbzFIROjuJpK9lb0Wi0phjzAnYxgQxjGHlhwYkL61arZcFXQLtZs/exec",
-        data: "name=" + name + "&phone=" + phone+ "&email=" + email+ "&move_date=" + moveDate+ "&move_size=" + moveSize+ "&bedrooms=" + bedrooms+ "&address_from=" + addressFrom+ "&city_from=" + cityFrom+ "&state_from=" + stateFrom+ "&zip_from=" + zipFrom+ "&address_to=" + addressTo+ "&city_to=" + cityTo+ "&state_to=" + stateTo+ "&zip_to=" + zipTo + "&comments=" + comments,
-        success: function(resp) {
-            console.log(resp);
-            if (resp.result === "success") {
-                formSuccess();
-            } else {
-                formError();
-                submitMSG(false, "There was some problem with submitting your request. Please call us at 202-650-9228 and we would be more than happy to help you get the right quote.");
-            }
-        }
-    });
+      type: "POST",
+      url: "https://script.google.com/macros/s/AKfycbzeZ8VNS7d14jtTfnfQto-5QsyvZkpMH5IKLs8I6ClzRqaiZD4/exec",
+      data: "name=" + name + "&phone=" + phone + "&email=" + email + "&move_date=" + moveDate + "&move_size=" + moveSize + "&bedrooms=" + bedrooms + "&address_from=" + addressFrom + "&city_from=" + cityFrom + "&state_from=" + stateFrom + "&zip_from=" + zipFrom + "&address_to=" + addressTo + "&city_to=" + cityTo + "&state_to=" + stateTo + "&zip_to=" + zipTo + "&comments=" + comments
+    }).done(function (resp) {
+      console.log(resp);
+      if (resp.result === "success") {
+        formSuccess();
+      } else {
+        formError();
+        submitMSG(false, "There was some problem with submitting your request. Please call us at 202-650-9228 and we would be more than happy to help you get the right quote.");
+      }
+    })
   }
 
   function formSuccess() {
@@ -89,16 +88,16 @@ $(document).ready(function() {
 
   function formError() {
     $("#estimate_form").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        function() {
-            $(this).removeClass();
-        });
+      function () {
+        $(this).removeClass();
+      });
   }
 
   function submitMSG(valid, msg) {
     if (valid) {
-        var msgClasses = "h3 text-center fadeInUp animated text-success msgSubmitSuccess";
+      var msgClasses = "h3 text-center fadeInUp animated text-success msgSubmitSuccess";
     } else {
-        var msgClasses = "h3 text-center text-danger msgSubmitSuccess msgSubmitFail";
+      var msgClasses = "h3 text-center text-danger msgSubmitSuccess msgSubmitFail";
     }
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
   }
