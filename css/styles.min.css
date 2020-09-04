@@ -789,7 +789,7 @@
 }
 
 .wrapper .header .header-info {
-  margin: 20px 25%;
+  margin: 20px 20%;
   display: grid;
   grid-gap: 30px;
   grid-template-columns: 1fr auto auto;
