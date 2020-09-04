@@ -1,1 +1,1762 @@
-@import url("https://fonts.googleapis.com/css?family=Asap|Open+Sans|Abril+Fatface|Racing+Sans+One|Ultra");.wrapper{display:-ms-grid;display:grid;-ms-grid-rows:auto auto 1fr auto;grid-template-rows:auto auto 1fr auto;height:100vh}.wrapper .header{display:-ms-grid;display:grid;-ms-grid-rows:(auto)[2];grid-template-rows:repeat(2, auto)}.wrapper .header .header-info{margin:20px 25%;display:-ms-grid;display:grid;grid-gap:30px;-ms-grid-columns:1fr auto auto;grid-template-columns:1fr auto auto;grid-auto-flow:column;min-width:800px}@media screen and (max-width: 768px){.wrapper .header .header-info{-ms-grid-columns:1fr;grid-template-columns:1fr;grid-auto-flow:row;font-size:25px;grid-gap:10px;min-width:auto}}.wrapper .header .header-info .logo{display:-ms-grid;display:grid;font-family:'Open Sans', sans-serif;-ms-grid-columns:auto 1fr;grid-template-columns:auto 1fr;grid-gap:20px;-ms-flex-line-pack:center;align-content:center}@media screen and (max-width: 768px){.wrapper .header .header-info .logo{font-size:25px}}.wrapper .header .header-info .logo img{min-width:100%}.wrapper .header .header-info .logo span{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center;font-weight:400;font-size:38px;color:#0c3c8e;line-height:25px;font-family:'Racing Sans One', cursive}.wrapper .header .header-info .email,.wrapper .header .header-info .phone{display:-ms-grid;display:grid;grid-gap:15px;-ms-grid-columns:auto 1fr;grid-template-columns:auto 1fr;grid-auto-flow:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.wrapper .header .header-info .email div,.wrapper .header .header-info .phone div{display:-ms-grid;display:grid;font-family:'Open Sans', sans-serif;font-size:20px}.wrapper .header .header-info .email i,.wrapper .header .header-info .phone i{padding:10px;border:1px solid lightgray;border-radius:50%;color:grey;font-size:25px}.wrapper .header .header-menu{display:-ms-grid;display:grid;grid-gap:3em;-ms-grid-columns:1fr (auto)[5] 1fr;grid-template-columns:1fr repeat(5, auto) 1fr;background-color:#0c3c8e;padding:15px 0;font-size:12px;font-weight:800;text-transform:uppercase}.wrapper .header .header-menu .navLink{font-family:'Open Sans', sans-serif;font-weight:700;font-style:normal;font-size:15px;color:white;padding:16px 10px;text-decoration:none;background-color:transparent;-webkit-transition:background-color 0.2s ease-out;transition:background-color 0.2s ease-out}.wrapper .header .header-menu .navLink:hover{background-color:#14b5f0}.wrapper .header .header-menu .free_quote{background-color:transparent;-webkit-transition:background-color 0.2s ease-out;transition:background-color 0.2s ease-out;background-color:#14b5f0;font-family:'Open Sans', sans-serif;font-size:15px;font-weight:700;font-style:normal;color:white;padding:16px 10px;text-decoration:none}.wrapper .header .header-menu .free_quote:hover{background-color:#0c3c8e}.wrapper .slider{background-image:url(../images/slider/slider-3.jpg);background-position:top;background-repeat:no-repeat;background-size:cover;display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr;grid-template-columns:1fr 1fr;padding-left:15%;min-height:600px;-ms-flex-line-pack:center;align-content:center}.wrapper .slider .slider-text{display:-ms-grid;display:grid;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.wrapper .slider .slider-text p{max-width:400px}.wrapper .slider .slider-text p:nth-child(1){text-transform:uppercase;font-weight:700;font-style:normal;font-family:'Asap', sans-serif;color:"black";font-size:23px;line-height:1.1;letter-spacing:1px}.wrapper .slider .slider-text p:nth-child(2){font-weight:700;font-style:normal;font-family:'Asap', sans-serif;color:#05001a;font-size:60px;line-height:1;letter-spacing:-2px}.wrapper .slider .slider-text p:nth-child(2) span{color:#0c3c8e}@media screen and (max-width: 768px){.wrapper .slider .slider-text p:nth-child(2){font-size:40px}}.wrapper .slider .slider-text p:nth-child(3){font-weight:400;font-style:normal;font-family:'Asap', sans-serif;color:#05001a;font-size:20px;line-height:1.4;letter-spacing:0px;margin-bottom:60px}.wrapper .slider .slider-text .quote-btn{color:white;padding:15px 35px;text-decoration:none;font-family:'Asap', sans-serif;font-weight:700;font-style:normal;border-color:transparent;background-color:#0c3c8e;-webkit-transition:background-color 0.2s ease-out;transition:background-color 0.2s ease-out}.wrapper .slider .slider-text .quote-btn:hover{background-color:#14b5f0}.wrapper .content .get_estimate{display:-ms-grid;display:grid;grid-gap:20px;-ms-grid-columns:1fr 1fr;grid-template-columns:1fr 1fr;max-width:70vw}@media screen and (max-width: 768px){.wrapper .content .get_estimate{-ms-grid-columns:1fr;grid-template-columns:1fr;max-width:100%}}.wrapper .content .get_estimate .estimate_img{display:-ms-grid;display:grid;-webkit-box-align:end;-ms-flex-align:end;align-items:end;justify-items:center}.wrapper .content .get_estimate .estimate_img img{margin-top:20px;width:65vh}@media screen and (max-width: 768px){.wrapper .content .get_estimate .estimate_img img{margin-top:15px;max-width:50%}}.wrapper .content .get_estimate .get_estimate_text{margin:150px 0px;min-width:350px}@media screen and (max-width: 990px){.wrapper .content .get_estimate .get_estimate_text{-ms-grid-columns:auto;grid-template-columns:auto;margin:60px 20px;margin-top:0px}}.wrapper .content .get_estimate .get_estimate_text p:nth-child(1){font-weight:900;font-style:normal;font-family:'Asap', sans-serif;color:#05001a;font-size:50px;line-height:1.1;letter-spacing:-1px;margin-top:10px}.wrapper .content .get_estimate .get_estimate_text p:nth-child(2){font-weight:400;font-style:normal;font-family:'Asap', sans-serif;color:#05001a;font-size:21px;line-height:1.7;letter-spacing:0px}.wrapper .content .get_estimate .get_estimate_text ul{list-style:none}@media screen and (max-width: 990px){.wrapper .content .get_estimate .get_estimate_text ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}}.wrapper .content .get_estimate .get_estimate_text ul i{font-size:20px;position:relative;margin-right:5px;top:6px;color:#14b5f0}.wrapper .content .get_estimate .get_estimate_text ul li{font-weight:700;font-style:normal;font-family:'Asap', sans-serif;color:#05001a;font-size:18px;line-height:1.3;letter-spacing:0px}.wrapper .content .get_estimate .get_estimate_text .quote_btn{position:relative;top:25px;color:white;padding:15px 35px;text-decoration:none;font-family:'Asap', sans-serif;font-weight:700;font-style:normal;border-color:transparent;background-color:#0c3c8e;-webkit-transition:background-color 0.2s ease-out;transition:background-color 0.2s ease-out}.wrapper .content .get_estimate .get_estimate_text .quote_btn:hover{background-color:#14b5f0}@media screen and (max-width: 990px){.wrapper .content .get_estimate .get_estimate_text .quote_btn{left:40%}}.wrapper .content .services{display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr;grid-template-columns:1fr 1fr}@media screen and (max-width: 768px){.wrapper .content .services{-ms-grid-columns:1fr;grid-template-columns:1fr;grid-auto-flow:row}}.wrapper .content .services .services_list_block{background-image:url(../images/services/bg.jpg);background-position:top;background-repeat:no-repeat;background-size:cover;display:-ms-grid;display:grid;-webkit-box-align:center;-ms-flex-align:center;align-items:center;justify-items:center}@media screen and (max-width: 768px){.wrapper .content .services .services_list_block{padding:60px 15px}}.wrapper .content .services .services_list_block .services_list{max-width:90%;display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr;grid-template-columns:1fr 1fr;grid-gap:20px;-ms-grid-rows:1fr 1fr;grid-template-rows:1fr 1fr;background-color:rgba(255,255,255,0.95);padding:15px}.wrapper .content .services .services_list_block .services_list .service{display:-ms-grid;display:grid;-ms-grid-columns:auto 1fr;grid-template-columns:auto 1fr;margin-top:15px}.wrapper .content .services .services_list_block .services_list .service div:nth-child(2){margin:0 15px}.wrapper .content .services .services_list_block .services_list .service img{min-width:45px;max-width:45px}.wrapper .content .services .services_list_block .services_list .service .service_title{font-weight:700;font-style:normal;font-family:'Asap', sans-serif;color:"black";font-size:20px;line-height:1.4;letter-spacing:1px;margin:0;padding:0}.wrapper .content .services .services_list_block .services_list .service .service_desc{grid-column:span 2;margin-top:15px;font-weight:400;font-style:normal;font-family:'Asap', sans-serif;color:"black";font-size:19px;line-height:1.6;letter-spacing:0px}.wrapper .content .services .services_title_block{background-image:url("../images//services/bg_title.jpg");background-position:top;background-repeat:no-repeat;background-size:cover;padding:150px 30px;color:white}@media screen and (max-width: 768px){.wrapper .content .services .services_title_block{padding:60px 15px;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}}.wrapper .content .services .services_title_block p:nth-child(1){font-weight:700;font-style:normal;font-family:'Asap', sans-serif;color:"white";font-size:45px;line-height:1.1;letter-spacing:-1px}.wrapper .content .services .services_title_block p:nth-child(2){font-weight:400;font-style:normal;font-family:'Asap', sans-serif;color:"white";font-size:19px;line-height:1.6;letter-spacing:0px;margin-bottom:50px;max-width:600px}.wrapper .content .services .services_title_block .service_btn{color:white;padding:15px 35px;text-decoration:none;font-family:'Asap', sans-serif;font-weight:700;font-style:normal;border-color:transparent;background-color:#14b5f0;-webkit-transition:background-color 0.2s ease-out;transition:background-color 0.2s ease-out}.wrapper .content .services .services_title_block .service_btn:hover{background-color:#0c3c8e}.wrapper .content .guarantee{display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr;grid-template-columns:1fr 1fr;background-color:#f6f6f6;padding:0px 25%;padding-bottom:40px}@media screen and (max-width: 768px){.wrapper .content .guarantee{-ms-grid-columns:1fr;grid-template-columns:1fr;grid-auto-flow:row;padding:25px}}.wrapper .content .guarantee .guarantee_header{grid-column:span 2;text-align:center}@media screen and (max-width: 768px){.wrapper .content .guarantee .guarantee_header{grid-column:span 1}}.wrapper .content .guarantee .guarantee_header{margin:25px}.wrapper .content .guarantee .guarantee_header p:nth-child(1){font-weight:700;font-style:normal;font-family:'Asap', sans-serif;color:#05001a;font-size:35px;line-height:1.1;letter-spacing:-1px}.wrapper .content .guarantee .guarantee_header p:nth-child(2){font-weight:400;font-style:normal;font-family:'Asap', sans-serif;color:#05001a;font-size:25px;line-height:1;letter-spacing:-1px}.wrapper .content .guarantee .guarantee_item{display:-ms-grid;display:grid;grid-gap:15px;-ms-grid-columns:auto 1fr;grid-template-columns:auto 1fr;margin:15px 25px}.wrapper .content .guarantee .guarantee_item p{margin:0 0}.wrapper .content .guarantee .guarantee_item .guarantee_title{font-weight:700;font-style:normal;font-family:'Asap', sans-serif;color:#05001a;font-size:20px;line-height:1.4;letter-spacing:1px}.wrapper .content .guarantee .guarantee_item .guarantee_desc{font-weight:400;font-style:normal;font-family:'Asap', sans-serif;color:#05001a;font-size:19px;line-height:1.6;letter-spacing:0px;margin-top:8px}.wrapper .content .contact_us{display:-ms-grid;display:grid;-ms-grid-columns:auto auto;grid-template-columns:auto auto;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:50px 10%;background-image:url("../images/contact_us.jpg");background-position:top;background-repeat:no-repeat;background-size:cover;color:white}@media screen and (max-width: 768px){.wrapper .content .contact_us{-ms-grid-columns:1fr;grid-template-columns:1fr;padding:25px 1%}}.wrapper .content .contact_us .contact_us_header{padding:100px 60px}@media screen and (max-width: 768px){.wrapper .content .contact_us .contact_us_header{padding:0px 30px;padding-top:20px;display:-ms-grid;display:grid;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}.wrapper .content .contact_us .contact_us_header .contact_us_title{font-weight:700;font-style:normal;font-family:'Asap', sans-serif;color:"white";font-size:55px;line-height:1.1;letter-spacing:-1px}.wrapper .content .contact_us .contact_us_header .contact_email,.wrapper .content .contact_us .contact_us_header .contact_phone{display:-ms-grid;display:grid;grid-gap:15px;-ms-grid-columns:auto 1fr;grid-template-columns:auto 1fr;grid-auto-flow:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:15px 0px}.wrapper .content .contact_us .contact_us_header .contact_email div,.wrapper .content .contact_us .contact_us_header .contact_phone div{font-weight:400;font-style:normal;font-family:'Asap', sans-serif;color:"white";font-size:30px;line-height:1.4;letter-spacing:0px;display:-ms-grid;display:grid}.wrapper .content .contact_us .contact_us_header .contact_email div b,.wrapper .content .contact_us .contact_us_header .contact_phone div b{font-weight:700;font-style:normal;font-family:'Asap', sans-serif;color:"white";font-size:35px;line-height:1.4;letter-spacing:1px}.wrapper .content .contact_us .contact_us_header .contact_email span,.wrapper .content .contact_us .contact_us_header .contact_phone span{padding:15px;font-size:25px;color:#14b5f0}.wrapper .content .contact_us .contact_us_form{padding:60px 20px;min-width:700px}.wrapper .content .contact_us .contact_us_form .form_title{text-align:center;background-color:#14b5f0;padding:15px;font-weight:700;font-style:normal;font-family:'Asap', sans-serif;color:"white";font-size:30px;line-height:1.1;letter-spacing:-1px}.wrapper .content .contact_us .contact_us_form form{background-color:#fff;color:#05001a;padding:20px}.wrapper .content .contact_us .contact_us_form form select{width:85%;margin-left:40px;font-size:25px;color:grey}.wrapper .content .contact_us .contact_us_form form .msgSubmitSuccess{font-weight:700;font-style:normal;font-family:'Asap', sans-serif;color:#16be45;font-size:21px;line-height:1.1;letter-spacing:0px;border:1px solid #16be45;text-align:center;padding:15px;margin:15px}.wrapper .content .contact_us .contact_us_form form .msgSubmitFail{color:red;border:1px solid red}.wrapper .content .contact_us .contact_us_form form label{font-size:20px}@media screen and (max-width: 768px){.wrapper .content .contact_us .contact_us_form form label{font-size:22px}}.wrapper .content .contact_us .contact_us_form form i{color:#7c7070}.wrapper .content .contact_us .contact_us_form form .form_section{text-align:center;font-weight:600;font-style:normal;font-family:'Asap', sans-serif;color:#14b5f0;font-size:25px;line-height:1.1;letter-spacing:1px}.wrapper .content .contact_us .contact_us_form form .submit_btn{color:white;padding:15px 35px;text-decoration:none;font-family:'Asap', sans-serif;font-weight:700;font-style:normal;border-color:transparent;background-color:#0c3c8e;-webkit-transition:background-color 0.2s ease-out;transition:background-color 0.2s ease-out;padding:10px 35px}.wrapper .content .contact_us .contact_us_form form .submit_btn:hover{background-color:#14b5f0}.wrapper .content .faq{background-image:url(../images/faq.jpg);background-position:top;background-repeat:no-repeat;background-size:cover;display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr;grid-template-columns:1fr 1fr;padding:3% 0}@media screen and (max-width: 768px){.wrapper .content .faq{-ms-grid-columns:1fr;grid-template-columns:1fr;padding:25px 2%;text-align:center}}.wrapper .content .faq .faq_header{font-weight:900;font-style:normal;font-family:'Asap', sans-serif;color:#000;font-size:55px;line-height:1.1px;letter-spacing:-1px;line-height:inherit}.wrapper .content .faq .faq_list{max-width:700px;border:none;-webkit-box-shadow:none;box-shadow:none}.wrapper .content .faq .faq_list li{margin:20px}.wrapper .content .faq .faq_list li .collapsible-header{background-color:#0c3c8e;border:none;font-weight:700;font-style:normal;font-family:'Asap', sans-serif;color:#fff;font-size:22px;line-height:0;letter-spacing:1px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-transform:uppercase}.wrapper .content .faq .faq_list li .collapsible-body{background-color:rgba(255,255,255,0.9);font-weight:400;font-style:normal;font-family:'Asap', sans-serif;color:#000;font-size:21px;line-height:1.7;letter-spacing:0px}.wrapper .footer{background-color:#2e2e2f;display:-ms-grid;display:grid;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.wrapper .footer .footer_content{text-align:center;padding-top:30px;padding-right:30px;display:-ms-grid;display:grid;grid-gap:20px;-ms-grid-columns:(1fr)[4];grid-template-columns:repeat(4, 1fr);color:white;max-width:70vw}@media screen and (max-width: 768px){.wrapper .footer .footer_content{-ms-grid-columns:1fr 1fr;grid-template-columns:1fr 1fr;max-width:100%;padding:20px 9%}}.wrapper .footer .footer_section{font-weight:700;font-style:normal;font-family:'Asap', sans-serif;color:#fff;font-size:20px;line-height:1.7;letter-spacing:0px}.wrapper .footer .footer_line{border-top:2px solid #14b5f0;padding-top:15px}.wrapper .footer .copyright{grid-column:span 4;background-color:#21282b}@media screen and (max-width: 768px){.wrapper .footer .copyright{grid-column:span 2}}.block{display:-ms-grid;display:grid;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}nav{background-color:#0c3c8e}nav .brand-logo{font-family:'Racing Sans One', cursive}
+@import url("https://fonts.googleapis.com/css?family=Asap|Open+Sans|Abril+Fatface|Racing+Sans+One|Ultra");
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
+  height: 100vh
+}
+
+.wrapper .header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[2];
+  grid-template-rows: repeat(2, auto)
+}
+
+.wrapper .header .header-info {
+  margin: 20px 25%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto auto;
+  grid-auto-flow: column;
+  min-width: 800px
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .header .header-info {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    font-size: 25px;
+    grid-gap: 10px;
+    min-width: auto
+  }
+}
+
+.wrapper .header .header-info .logo {
+  display: -ms-grid;
+  display: grid;
+  font-family: 'Open Sans', sans-serif;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+  -ms-flex-line-pack: center;
+  align-content: center
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .header .header-info .logo {
+    font-size: 25px
+  }
+}
+
+.wrapper .header .header-info .logo img {
+  min-width: 100%
+}
+
+.wrapper .header .header-info .logo span {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  font-weight: 400;
+  font-size: 38px;
+  color: #0c3c8e;
+  line-height: 25px;
+  font-family: 'Racing Sans One', cursive
+}
+
+.wrapper .header .header-info .email,
+.wrapper .header .header-info .phone {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  grid-auto-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.wrapper .header .header-info .email div,
+.wrapper .header .header-info .phone div {
+  display: -ms-grid;
+  display: grid;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px
+}
+
+.wrapper .header .header-info .email i,
+.wrapper .header .header-info .phone i {
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  color: grey;
+  font-size: 25px
+}
+
+.wrapper .header .header-menu {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3em;
+  -ms-grid-columns: 1fr (auto)[5] 1fr;
+  grid-template-columns: 1fr repeat(5, auto) 1fr;
+  background-color: #0c3c8e;
+  padding: 15px 0;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase
+}
+
+.wrapper .header .header-menu .navLink {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+  padding: 16px 10px;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out
+}
+
+.wrapper .header .header-menu .navLink:hover {
+  background-color: #14b5f0
+}
+
+.wrapper .header .header-menu .free_quote {
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  background-color: #14b5f0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  padding: 16px 10px;
+  text-decoration: none
+}
+
+.wrapper .header .header-menu .free_quote:hover {
+  background-color: #0c3c8e
+}
+
+.wrapper .slider {
+  background-image: url(../images/slider/slider-3.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 15%;
+  min-height: 600px;
+  -ms-flex-line-pack: center;
+  align-content: center
+}
+
+.wrapper .slider .slider-text {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.wrapper .slider .slider-text p {
+  max-width: 400px
+}
+
+.wrapper .slider .slider-text p:nth-child(1) {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: "black";
+  font-size: 23px;
+  line-height: 1.1;
+  letter-spacing: 1px
+}
+
+.wrapper .slider .slider-text p:nth-child(2) {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #05001a;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -2px
+}
+
+.wrapper .slider .slider-text p:nth-child(2) span {
+  color: #0c3c8e
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .slider .slider-text p:nth-child(2) {
+    font-size: 40px
+  }
+}
+
+.wrapper .slider .slider-text p:nth-child(3) {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #05001a;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  margin-bottom: 60px
+}
+
+.wrapper .slider .slider-text .quote-btn {
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-color: transparent;
+  background-color: #0c3c8e;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out
+}
+
+.wrapper .slider .slider-text .quote-btn:hover {
+  background-color: #14b5f0
+}
+
+.wrapper .content .get_estimate {
+  max-width: 70vw
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .get_estimate {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    max-width: 100%
+  }
+}
+
+.wrapper .content .get_estimate .estimate_img {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  justify-items: center
+}
+
+.wrapper .content .get_estimate .estimate_img img {
+  margin-top: 20px;
+  width: 65vh
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .get_estimate .estimate_img img {
+    margin-top: 15px;
+    max-width: 50%
+  }
+}
+
+.wrapper .content .get_estimate .get_estimate_text {
+  margin: 150px 0px;
+  min-width: 350px
+}
+
+@media screen and (max-width: 990px) {
+  .wrapper .content .get_estimate .get_estimate_text {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    margin: 60px 20px;
+    margin-top: 0px
+  }
+}
+
+.wrapper .content .get_estimate .get_estimate_text p:nth-child(1) {
+  font-weight: 900;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #05001a;
+  font-size: 50px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-top: 10px
+}
+
+.wrapper .content .get_estimate .get_estimate_text p:nth-child(2) {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #05001a;
+  font-size: 21px;
+  line-height: 1.7;
+  letter-spacing: 0px
+}
+
+.wrapper .content .get_estimate .get_estimate_text ul {
+  list-style: none
+}
+
+@media screen and (max-width: 990px) {
+  .wrapper .content .get_estimate .get_estimate_text ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+  }
+}
+
+.wrapper .content .get_estimate .get_estimate_text ul i {
+  font-size: 20px;
+  position: relative;
+  margin-right: 5px;
+  top: 6px;
+  color: #14b5f0
+}
+
+.wrapper .content .get_estimate .get_estimate_text ul li {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #05001a;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0px
+}
+
+.wrapper .content .get_estimate .get_estimate_text .quote_btn {
+  position: relative;
+  top: 25px;
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-color: transparent;
+  background-color: #0c3c8e;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out
+}
+
+.wrapper .content .get_estimate .get_estimate_text .quote_btn:hover {
+  background-color: #14b5f0
+}
+
+@media screen and (max-width: 990px) {
+  .wrapper .content .get_estimate .get_estimate_text .quote_btn {
+    left: 40%
+  }
+}
+
+.wrapper .content .services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .services {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row
+  }
+}
+
+.wrapper .content .services .services_list_block {
+  background-image: url(../images/services/bg.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-items: center
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .services .services_list_block {
+    padding: 60px 15px
+  }
+}
+
+.wrapper .content .services .services_list_block .services_list {
+  max-width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px
+}
+
+.wrapper .content .services .services_list_block .services_list .service {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  margin-top: 15px
+}
+
+.wrapper .content .services .services_list_block .services_list .service div:nth-child(2) {
+  margin: 0 15px
+}
+
+.wrapper .content .services .services_list_block .services_list .service img {
+  min-width: 45px;
+  max-width: 45px
+}
+
+.wrapper .content .services .services_list_block .services_list .service .service_title {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: "black";
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0
+}
+
+.wrapper .content .services .services_list_block .services_list .service .service_desc {
+  grid-column: span 2;
+  margin-top: 15px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: "black";
+  font-size: 19px;
+  line-height: 1.6;
+  letter-spacing: 0px
+}
+
+.wrapper .content .services .services_title_block {
+  background-image: url("../images//services/bg_title.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 30px;
+  color: white
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .services .services_title_block {
+    padding: 60px 15px;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1
+  }
+}
+
+.wrapper .content .services .services_title_block p:nth-child(1) {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: "white";
+  font-size: 45px;
+  line-height: 1.1;
+  letter-spacing: -1px
+}
+
+.wrapper .content .services .services_title_block p:nth-child(2) {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: "white";
+  font-size: 19px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  margin-bottom: 50px;
+  max-width: 600px
+}
+
+.wrapper .content .services .services_title_block .service_btn {
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-color: transparent;
+  background-color: #14b5f0;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out
+}
+
+.wrapper .content .services .services_title_block .service_btn:hover {
+  background-color: #0c3c8e
+}
+
+.wrapper .content .guarantee {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f6f6f6;
+  padding: 0px 25%;
+  padding-bottom: 40px
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .guarantee {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    padding: 25px
+  }
+}
+
+.wrapper .content .guarantee .guarantee_header {
+  grid-column: span 2;
+  text-align: center
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .guarantee .guarantee_header {
+    grid-column: span 1
+  }
+}
+
+.wrapper .content .guarantee .guarantee_header {
+  margin: 25px
+}
+
+.wrapper .content .guarantee .guarantee_header p:nth-child(1) {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #05001a;
+  font-size: 35px;
+  line-height: 1.1;
+  letter-spacing: -1px
+}
+
+.wrapper .content .guarantee .guarantee_header p:nth-child(2) {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #05001a;
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: -1px
+}
+
+.wrapper .content .guarantee .guarantee_item {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  margin: 15px 25px
+}
+
+.wrapper .content .guarantee .guarantee_item p {
+  margin: 0 0
+}
+
+.wrapper .content .guarantee .guarantee_item .guarantee_title {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #05001a;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 1px
+}
+
+.wrapper .content .guarantee .guarantee_item .guarantee_desc {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #05001a;
+  font-size: 19px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  margin-top: 8px
+}
+
+.wrapper .content .contact_us {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 50px 10%;
+  background-image: url("../images/contact_us.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .contact_us {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 25px 1%
+  }
+}
+
+.wrapper .content .contact_us .contact_us_header {
+  padding: 100px 60px
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .contact_us .contact_us_header {
+    padding: 0px 30px;
+    padding-top: 20px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+}
+
+.wrapper .content .contact_us .contact_us_header .contact_us_title {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: "white";
+  font-size: 55px;
+  line-height: 1.1;
+  letter-spacing: -1px
+}
+
+.wrapper .content .contact_us .contact_us_header .contact_email,
+.wrapper .content .contact_us .contact_us_header .contact_phone {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  grid-auto-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 15px 0px
+}
+
+.wrapper .content .contact_us .contact_us_header .contact_email div,
+.wrapper .content .contact_us .contact_us_header .contact_phone div {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: "white";
+  font-size: 30px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  display: -ms-grid;
+  display: grid
+}
+
+.wrapper .content .contact_us .contact_us_header .contact_email div b,
+.wrapper .content .contact_us .contact_us_header .contact_phone div b {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: "white";
+  font-size: 35px;
+  line-height: 1.4;
+  letter-spacing: 1px
+}
+
+.wrapper .content .contact_us .contact_us_header .contact_email span,
+.wrapper .content .contact_us .contact_us_header .contact_phone span {
+  padding: 15px;
+  font-size: 25px;
+  color: #14b5f0
+}
+
+.wrapper .content .contact_us .contact_us_form {
+  padding: 60px 20px;
+  min-width: 700px
+}
+
+.wrapper .content .contact_us .contact_us_form .form_title {
+  text-align: center;
+  background-color: #14b5f0;
+  padding: 15px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: "white";
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: -1px
+}
+
+.wrapper .content .contact_us .contact_us_form form {
+  background-color: #fff;
+  color: #05001a;
+  padding: 20px
+}
+
+.wrapper .content .contact_us .contact_us_form form select {
+  width: 85%;
+  margin-left: 40px;
+  font-size: 25px;
+  color: grey
+}
+
+.wrapper .content .contact_us .contact_us_form form .msgSubmitSuccess {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #16be45;
+  font-size: 21px;
+  line-height: 1.1;
+  letter-spacing: 0px;
+  border: 1px solid #16be45;
+  text-align: center;
+  padding: 15px;
+  margin: 15px
+}
+
+.wrapper .content .contact_us .contact_us_form form .msgSubmitFail {
+  color: red;
+  border: 1px solid red
+}
+
+.wrapper .content .contact_us .contact_us_form form label {
+  font-size: 20px
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .contact_us .contact_us_form form label {
+    font-size: 22px
+  }
+}
+
+.wrapper .content .contact_us .contact_us_form form i {
+  color: #7c7070
+}
+
+.wrapper .content .contact_us .contact_us_form form .form_section {
+  text-align: center;
+  font-weight: 600;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #14b5f0;
+  font-size: 25px;
+  line-height: 1.1;
+  letter-spacing: 1px
+}
+
+.wrapper .content .contact_us .contact_us_form form .submit_btn {
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-color: transparent;
+  background-color: #0c3c8e;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  padding: 10px 35px
+}
+
+.wrapper .con@import url("https://fonts.googleapis.com/css?family=Asap|Open+Sans|Abril+Fatface|Racing+Sans+One|Ultra");
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  height: 100vh;
+}
+
+.wrapper .header {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+.wrapper .header .header-info {
+  margin: 20px 25%;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr auto auto;
+  grid-auto-flow: column;
+  min-width: 800px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .header .header-info {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    font-size: 25px;
+    grid-gap: 10px;
+    min-width: auto;
+  }
+}
+
+.wrapper .header .header-info .logo {
+  display: grid;
+  font-family: "Open Sans", sans-serif;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+  align-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .header .header-info .logo {
+    font-size: 25px;
+  }
+}
+
+.wrapper .header .header-info .logo img {
+  min-width: 100%;
+}
+
+.wrapper .header .header-info .logo span {
+  align-self: center;
+  font-weight: 400;
+  font-size: 38px;
+  color: #0c3c8e;
+  line-height: 25px;
+  font-family: "Racing Sans One", cursive;
+}
+
+.wrapper .header .header-info .email,
+.wrapper .header .header-info .phone {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: auto 1fr;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.wrapper .header .header-info .email div,
+.wrapper .header .header-info .phone div {
+  display: grid;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.wrapper .header .header-info .email i,
+.wrapper .header .header-info .phone i {
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  color: grey;
+  font-size: 25px;
+}
+
+.wrapper .header .header-menu {
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: 1fr repeat(5, auto) 1fr;
+  background-color: #0c3c8e;
+  padding: 15px 0;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.wrapper .header .header-menu .navLink {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+  padding: 16px 10px;
+  text-decoration: none;
+  background-color: transparent;
+  transition: background-color 0.2s ease-out;
+}
+
+.wrapper .header .header-menu .navLink:hover {
+  background-color: #14b5f0;
+}
+
+.wrapper .header .header-menu .free_quote {
+  background-color: transparent;
+  transition: background-color 0.2s ease-out;
+  background-color: #14b5f0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  padding: 16px 10px;
+  text-decoration: none;
+}
+
+.wrapper .header .header-menu .free_quote:hover {
+  background-color: #0c3c8e;
+}
+
+.wrapper .slider {
+  background-image: url(../images/slider/slider-3.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 15%;
+  min-height: 900px;
+  align-content: center;
+}
+
+.wrapper .slider .slider-text {
+  display: grid;
+  justify-content: center;
+}
+
+.wrapper .slider .slider-text p {
+  max-width: 400px;
+}
+
+.wrapper .slider .slider-text p:nth-child(1) {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: "black";
+  font-size: 23px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.wrapper .slider .slider-text p:nth-child(2) {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: #05001a;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.wrapper .slider .slider-text p:nth-child(2) span {
+  color: #0c3c8e;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .slider .slider-text p:nth-child(2) {
+    font-size: 40px;
+  }
+}
+
+.wrapper .slider .slider-text p:nth-child(3) {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: #05001a;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  margin-bottom: 60px;
+}
+
+.wrapper .slider .slider-text .quote-btn {
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-color: transparent;
+  background-color: #0c3c8e;
+  transition: background-color 0.2s ease-out;
+}
+
+.wrapper .slider .slider-text .quote-btn:hover {
+  background-color: #14b5f0;
+}
+
+.wrapper .content .get_estimate {
+  max-width: 70vw;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .get_estimate {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}
+
+.wrapper .content .get_estimate .estimate_img {
+  display: grid;
+  align-items: end;
+  justify-items: center;
+}
+
+.wrapper .content .get_estimate .estimate_img img {
+  margin-top: 20px;
+  width: 65vh;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .get_estimate .estimate_img img {
+    margin-top: 15px;
+    max-width: 50%;
+  }
+}
+
+.wrapper .content .get_estimate .get_estimate_text {
+  margin: 150px 0px;
+  min-width: 350px;
+}
+
+@media screen and (max-width: 990px) {
+  .wrapper .content .get_estimate .get_estimate_text {
+    grid-template-columns: auto;
+    margin: 60px 20px;
+    margin-top: 0px;
+  }
+}
+
+.wrapper .content .get_estimate .get_estimate_text p:nth-child(1) {
+  font-weight: 900;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: #05001a;
+  font-size: 50px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-top: 10px;
+}
+
+.wrapper .content .get_estimate .get_estimate_text p:nth-child(2) {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: #05001a;
+  font-size: 21px;
+  line-height: 1.7;
+  letter-spacing: 0px;
+}
+
+.wrapper .content .get_estimate .get_estimate_text ul {
+  list-style: none;
+}
+
+@media screen and (max-width: 990px) {
+  .wrapper .content .get_estimate .get_estimate_text ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.wrapper .content .get_estimate .get_estimate_text ul i {
+  font-size: 20px;
+  position: relative;
+  margin-right: 5px;
+  top: 6px;
+  color: #14b5f0;
+}
+
+.wrapper .content .get_estimate .get_estimate_text ul li {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: #05001a;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+}
+
+.wrapper .content .get_estimate .get_estimate_text .quote_btn {
+  position: relative;
+  top: 25px;
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-color: transparent;
+  background-color: #0c3c8e;
+  transition: background-color 0.2s ease-out;
+}
+
+.wrapper .content .get_estimate .get_estimate_text .quote_btn:hover {
+  background-color: #14b5f0;
+}
+
+@media screen and (max-width: 990px) {
+  .wrapper .content .get_estimate .get_estimate_text .quote_btn {
+    left: 40%;
+  }
+}
+
+.wrapper .content .services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .services {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+}
+
+.wrapper .content .services .services_list_block {
+  background-image: url(../images/services/bg.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .services .services_list_block {
+    padding: 60px 15px;
+  }
+}
+
+.wrapper .content .services .services_list_block .services_list {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-rows: 1fr 1fr;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+}
+
+.wrapper .content .services .services_list_block .services_list .service {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-top: 15px;
+}
+
+.wrapper .content .services .services_list_block .services_list .service div:nth-child(2) {
+  margin: 0 15px;
+}
+
+.wrapper .content .services .services_list_block .services_list .service img {
+  min-width: 45px;
+  max-width: 45px;
+}
+
+.wrapper .content .services .services_list_block .services_list .service .service_title {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: "black";
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper .content .services .services_list_block .services_list .service .service_desc {
+  grid-column: span 2;
+  margin-top: 15px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: "black";
+  font-size: 19px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+}
+
+.wrapper .content .services .services_title_block {
+  background-image: url("../images//services/bg_title.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 30px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .services .services_title_block {
+    padding: 60px 15px;
+    order: -1;
+  }
+}
+
+.wrapper .content .services .services_title_block p:nth-child(1) {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: "white";
+  font-size: 45px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.wrapper .content .services .services_title_block p:nth-child(2) {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: "white";
+  font-size: 19px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  margin-bottom: 50px;
+  max-width: 600px;
+}
+
+.wrapper .content .services .services_title_block .service_btn {
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-color: transparent;
+  background-color: #14b5f0;
+  transition: background-color 0.2s ease-out;
+}
+
+.wrapper .content .services .services_title_block .service_btn:hover {
+  background-color: #0c3c8e;
+}
+
+.wrapper .content .guarantee {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f6f6f6;
+  padding: 0px 25%;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .guarantee {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    padding: 25px;
+  }
+}
+
+.wrapper .content .guarantee .guarantee_header {
+  grid-column: span 2;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .guarantee .guarantee_header {
+    grid-column: span 1;
+  }
+}
+
+.wrapper .content .guarantee .guarantee_header {
+  margin: 25px;
+}
+
+.wrapper .content .guarantee .guarantee_header p:nth-child(1) {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: #05001a;
+  font-size: 35px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.wrapper .content .guarantee .guarantee_header p:nth-child(2) {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: #05001a;
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.wrapper .content .guarantee .guarantee_item {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: auto 1fr;
+  margin: 15px 25px;
+}
+
+.wrapper .content .guarantee .guarantee_item p {
+  margin: 0 0;
+}
+
+.wrapper .content .guarantee .guarantee_item .guarantee_title {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: #05001a;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+.wrapper .content .guarantee .guarantee_item .guarantee_desc {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: #05001a;
+  font-size: 19px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  margin-top: 8px;
+}
+
+.wrapper .content .contact_us {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  padding: 50px 10%;
+  background-image: url("../images/contact_us.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .contact_us {
+    grid-template-columns: 1fr;
+    padding: 25px 1%;
+  }
+}
+
+.wrapper .content .contact_us .contact_us_header {
+  padding: 100px 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .contact_us .contact_us_header {
+    padding: 0px 30px;
+    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+  }
+}
+
+.wrapper .content .contact_us .contact_us_header .contact_us_title {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: "white";
+  font-size: 55px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.wrapper .content .contact_us .contact_us_header .contact_email,
+.wrapper .content .contact_us .contact_us_header .contact_phone {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: auto 1fr;
+  grid-auto-flow: column;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.wrapper .content .contact_us .contact_us_header .contact_email div,
+.wrapper .content .contact_us .contact_us_header .contact_phone div {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: "white";
+  font-size: 30px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  display: grid;
+}
+
+.wrapper .content .contact_us .contact_us_header .contact_email div b,
+.wrapper .content .contact_us .contact_us_header .contact_phone div b {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: "white";
+  font-size: 35px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+.wrapper .content .contact_us .contact_us_header .contact_email span,
+.wrapper .content .contact_us .contact_us_header .contact_phone span {
+  padding: 15px;
+  font-size: 25px;
+  color: #14b5f0;
+}
+
+.wrapper .content .contact_us .contact_us_form {
+  padding: 60px 20px;
+  min-width: 700px;
+}
+
+.wrapper .content .contact_us .contact_us_form .form_title {
+  text-align: center;
+  background-color: #14b5f0;
+  padding: 15px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: "white";
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.wrapper .content .contact_us .contact_us_form form {
+  background-color: white;
+  color: #05001a;
+  padding: 20px;
+}
+
+.wrapper .content .contact_us .contact_us_form form select {
+  width: 85%;
+  margin-left: 40px;
+  font-size: 25px;
+  color: grey;
+}
+
+.wrapper .content .contact_us .contact_us_form form .msgSubmitSuccess {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: #16be45;
+  font-size: 21px;
+  line-height: 1.1;
+  letter-spacing: 0px;
+  border: 1px solid #16be45;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+}
+
+.wrapper .content .contact_us .contact_us_form form .msgSubmitFail {
+  color: red;
+  border: 1px solid red;
+}
+
+.wrapper .content .contact_us .contact_us_form form label {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .contact_us .contact_us_form form label {
+    font-size: 22px;
+  }
+}
+
+.wrapper .content .contact_us .contact_us_form form i {
+  color: #7c7070;
+}
+
+.wrapper .content .contact_us .contact_us_form form .form_section {
+  text-align: center;
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: #14b5f0;
+  font-size: 25px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.wrapper .content .contact_us .contact_us_form form .submit_btn {
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-color: transparent;
+  background-color: #0c3c8e;
+  transition: background-color 0.2s ease-out;
+  padding: 10px 35px;
+}
+
+.wrapper .content .contact_us .contact_us_form form .submit_btn:hover {
+  background-color: #14b5f0;
+}
+
+.wrapper .content .faq {
+  background-image: url(../images/faq.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3% 0;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .faq {
+    grid-template-columns: 1fr;
+    padding: 25px 2%;
+    text-align: center;
+  }
+}
+
+.wrapper .content .faq .faq_header {
+  font-weight: 900;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: black;
+  font-size: 55px;
+  line-height: 1.1px;
+  letter-spacing: -1px;
+  line-height: inherit;
+}
+
+.wrapper .content .faq .faq_list {
+  max-width: 700px;
+  border: none;
+  box-shadow: none;
+}
+
+.wrapper .content .faq .faq_list li {
+  margin: 20px;
+}
+
+.wrapper .content .faq .faq_list li .collapsible-header {
+  background-color: #0c3c8e;
+  border: none;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: white;
+  font-size: 22px;
+  line-height: 0;
+  letter-spacing: 1px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.wrapper .content .faq .faq_list li .collapsible-body {
+  background-color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: black;
+  font-size: 21px;
+  line-height: 1.7;
+  letter-spacing: 0px;
+}
+
+.wrapper .footer {
+  background-color: #2e2e2f;
+  display: grid;
+  justify-content: center;
+}
+
+.wrapper .footer .footer_content {
+  text-align: center;
+  padding-top: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+  max-width: 70vw;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .footer .footer_content {
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    padding: 20px 9%;
+  }
+}
+
+.wrapper .footer .footer_section {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Asap", sans-serif;
+  color: white;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: 0px;
+}
+
+.wrapper .footer .footer_line {
+  border-top: 2px solid #14b5f0;
+  padding-top: 15px;
+}
+
+.wrapper .footer .copyright {
+  grid-column: span 4;
+  background-color: #21282b;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .footer .copyright {
+    grid-column: span 2;
+  }
+}
+
+.block {
+  display: grid;
+  justify-content: center;
+}
+
+nav {
+  background-color: #0c3c8e;
+}
+
+nav .brand-logo {
+  font-family: "Racing Sans One", cursive;
+}
+
+tent .contact_us .contact_us_form form .submit_btn:hover {
+  background-color: #14b5f0
+}
+
+.wrapper .content .faq {
+  background-image: url(../images/faq.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 3% 0
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .content .faq {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 25px 2%;
+    text-align: center
+  }
+}
+
+.wrapper .content .faq .faq_header {
+  font-weight: 900;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #000;
+  font-size: 55px;
+  line-height: 1.1px;
+  letter-spacing: -1px;
+  line-height: inherit
+}
+
+.wrapper .content .faq .faq_list {
+  max-width: 700px;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+
+.wrapper .content .faq .faq_list li {
+  margin: 20px
+}
+
+.wrapper .content .faq .faq_list li .collapsible-header {
+  background-color: #0c3c8e;
+  border: none;
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #fff;
+  font-size: 22px;
+  line-height: 0;
+  letter-spacing: 1px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase
+}
+
+.wrapper .content .faq .faq_list li .collapsible-body {
+  background-color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #000;
+  font-size: 21px;
+  line-height: 1.7;
+  letter-spacing: 0px
+}
+
+.wrapper .footer {
+  background-color: #2e2e2f;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.wrapper .footer .footer_content {
+  text-align: center;
+  padding-top: 30px;
+  padding-right: 30px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+  max-width: 70vw
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .footer .footer_content {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    padding: 20px 9%
+  }
+}
+
+.wrapper .footer .footer_section {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Asap', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: 0px
+}
+
+.wrapper .footer .footer_line {
+  border-top: 2px solid #14b5f0;
+  padding-top: 15px
+}
+
+.wrapper .footer .copyright {
+  grid-column: span 4;
+  background-color: #21282b
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .footer .copyright {
+    grid-column: span 2
+  }
+}
+
+.block {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+nav {
+  background-color: #0c3c8e
+}
+
+nav .brand-logo {
+  font-family: 'Racing Sans One', cursive
+}

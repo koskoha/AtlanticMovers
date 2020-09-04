@@ -1,32 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Asap|Open+Sans|Abril+Fatface|Racing+Sans+One|Ultra');
-@import '_cust_variables';
+@import url("https://fonts.googleapis.com/css?family=Asap|Open+Sans|Abril+Fatface|Racing+Sans+One|Ultra");
+@import "_cust_variables";
 
-@mixin sys_font(
-  $weight: 700,
+@mixin sys_font($weight: 700,
   $size: 10px,
-  $color: 'black',
+  $color: "black",
   $line: 1.1,
-  $spacing: 1px
-) {
+  $spacing: 1px) {
   font-weight: $weight;
   font-style: normal;
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   color: $color;
   font-size: $size + 5px;
   line-height: $line;
   letter-spacing: $spacing;
 }
 
-@mixin btn($color: 'blue', $hover_color: 'yellow') {
+@mixin btn($color: "blue", $hover_color: "yellow") {
   color: white;
   padding: 15px 35px;
   text-decoration: none;
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   font-weight: 700;
   font-style: normal;
   border-color: transparent;
   background-color: $color;
   transition: background-color 0.2s ease-out;
+
   &:hover {
     background-color: $hover_color;
   }
@@ -43,9 +42,11 @@
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   height: 100vh;
+
   .header {
     display: grid;
     grid-template-rows: repeat(2, auto);
+
     .header-info {
       margin: 20px 25%;
       display: grid;
@@ -53,6 +54,7 @@
       grid-template-columns: 1fr auto auto;
       grid-auto-flow: column;
       min-width: 800px;
+
       @media screen and (max-width: $tablet_bp) {
         grid-template-columns: 1fr;
         grid-auto-flow: row;
@@ -60,34 +62,40 @@
         grid-gap: 10px;
         min-width: auto;
       }
+
       .logo {
         display: grid;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         grid-template-columns: auto 1fr;
         grid-gap: 20px;
         align-content: center;
+
         @media screen and (max-width: $tablet_bp) {
           font-size: 25px;
         }
+
         img {
           min-width: 100%;
         }
+
         span {
           align-self: center;
           font-weight: 400;
           font-size: 38px;
           color: $blue;
           line-height: 25px;
-          font-family: 'Racing Sans One', cursive;
+          font-family: "Racing Sans One", cursive;
+
           @media screen and (max-width: $tablet_bp) {
             // font-size: 25px;
           }
         }
       }
+
       .email {
-        @media screen and (max-width: $tablet_bp) {
-        }
+        @media screen and (max-width: $tablet_bp) {}
       }
+
       .email,
       .phone {
         display: grid;
@@ -95,24 +103,27 @@
         grid-template-columns: auto 1fr;
         grid-auto-flow: column;
         align-items: center;
-        @media screen and (max-width: $tablet_bp) {
-        }
+
+        @media screen and (max-width: $tablet_bp) {}
+
         div {
           display: grid;
-          font-family: 'Open Sans', sans-serif;
+          font-family: "Open Sans", sans-serif;
           font-size: 20px;
         }
+
         i {
           padding: 10px;
           border: 1px solid lightgray;
           border-radius: 50%;
           color: grey;
           font-size: 25px;
-          @media screen and (max-width: $tablet_bp) {
-          }
+
+          @media screen and (max-width: $tablet_bp) {}
         }
       }
     }
+
     .header-menu {
       // @media screen and (max-width: $tablet_bp) {
       //   padding: 60px 15px;
@@ -125,8 +136,9 @@
       font-size: 12px;
       font-weight: 800;
       text-transform: uppercase;
+
       .navLink {
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: 15px;
@@ -135,21 +147,24 @@
         text-decoration: none;
         background-color: transparent;
         transition: background-color 0.2s ease-out;
+
         &:hover {
           background-color: $light_blue;
         }
       }
+
       .free_quote {
         background-color: transparent;
         transition: background-color 0.2s ease-out;
         background-color: $light_blue;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-size: 15px;
         font-weight: 700;
         font-style: normal;
         color: white;
         padding: 16px 10px;
         text-decoration: none;
+
         &:hover {
           background-color: $blue;
         }
@@ -167,29 +182,37 @@
     padding-left: 15%;
     min-height: 900px;
     align-content: center;
+
     .slider-text {
       display: grid;
       justify-content: center;
+
       p {
         max-width: 400px;
       }
+
       p:nth-child(1) {
         text-transform: uppercase;
         @include sys_font($size: 18px);
       }
+
       p:nth-child(2) {
         @include sys_font(700, 55px, $black, 1, -2px);
+
         span {
           color: $blue;
         }
+
         @media screen and (max-width: $tablet_bp) {
           font-size: 40px;
         }
       }
+
       p:nth-child(3) {
         @include sys_font(400, 15px, $black, 1.4, 0px);
         margin-bottom: 60px;
       }
+
       .quote-btn {
         @include btn($blue, $light_blue);
       }
@@ -198,48 +221,56 @@
 
   .content {
     .get_estimate {
-      display: grid;
-      grid-gap: 20px;
-      grid-template-columns: 1fr 1fr;
       max-width: 70vw;
+
       @media screen and (max-width: $tablet_bp) {
         grid-template-columns: 1fr;
         max-width: 100%;
       }
+
       .estimate_img {
         display: grid;
         align-items: end;
         justify-items: center;
+
         img {
           margin-top: 20px;
           width: 65vh;
+
           @media screen and (max-width: $tablet_bp) {
             margin-top: 15px;
             max-width: 50%;
           }
         }
       }
+
       .get_estimate_text {
         margin: 150px 0px;
         min-width: 350px;
+
         @media screen and (max-width: $small_screen) {
           grid-template-columns: auto;
           margin: 60px 20px;
           margin-top: 0px;
         }
+
         p:nth-child(1) {
           @include sys_font(900, 45px, $black, 1.1, -1px);
           margin-top: 10px;
         }
+
         p:nth-child(2) {
           @include sys_font(400, 16px, $black, 1.7, 0px);
         }
+
         ul {
           list-style: none;
+
           @media screen and (max-width: $small_screen) {
             display: flex;
             justify-content: space-around;
           }
+
           i {
             font-size: 20px;
             position: relative;
@@ -247,27 +278,33 @@
             top: 6px;
             color: $light_blue;
           }
+
           li {
             @include sys_font(700, 13px, $black, 1.3, 0px);
           }
         }
+
         .quote_btn {
           position: relative;
           top: 25px;
           @include btn($blue, $light_blue);
+
           @media screen and (max-width: $small_screen) {
             left: 40%;
           }
         }
       }
     }
+
     .services {
       display: grid;
       grid-template-columns: 1fr 1fr;
+
       @media screen and (max-width: $tablet_bp) {
         grid-template-columns: 1fr;
         grid-auto-flow: row;
       }
+
       .services_list_block {
         background-image: url(../images/services/bg.jpg);
         background-position: top;
@@ -276,9 +313,11 @@
         display: grid;
         align-items: center;
         justify-items: center;
+
         @media screen and (max-width: $tablet_bp) {
           padding: 60px 15px;
         }
+
         .services_list {
           max-width: 90%;
           display: grid;
@@ -287,121 +326,148 @@
           grid-template-rows: 1fr 1fr;
           background-color: rgba(255, 255, 255, 0.95);
           padding: 15px;
+
           .service {
             display: grid;
             // grid-gap: 15px;
             grid-template-columns: auto 1fr;
             margin-top: 15px;
+
             div:nth-child(2) {
               margin: 0 15px;
             }
+
             img {
               min-width: 45px;
               max-width: 45px;
             }
+
             .service_title {
-              @include sys_font(700, 15px, 'black', 1.4, 1px);
+              @include sys_font(700, 15px, "black", 1.4, 1px);
               margin: 0;
               padding: 0;
             }
+
             .service_desc {
               grid-column: span 2;
               margin-top: 15px;
-              @include sys_font(400, 14px, 'black', 1.6, 0px);
+              @include sys_font(400, 14px, "black", 1.6, 0px);
             }
           }
         }
       }
+
       .services_title_block {
-        @include background_img('../images//services/bg_title.jpg');
+        @include background_img("../images//services/bg_title.jpg");
         padding: 150px 30px;
         color: white;
+
         @media screen and (max-width: $tablet_bp) {
           padding: 60px 15px;
           order: -1;
         }
+
         p:nth-child(1) {
-          @include sys_font(700, 40px, 'white', 1.1, -1px);
+          @include sys_font(700, 40px, "white", 1.1, -1px);
         }
+
         p:nth-child(2) {
-          @include sys_font(400, 14px, 'white', 1.6, 0px);
+          @include sys_font(400, 14px, "white", 1.6, 0px);
           margin-bottom: 50px;
           max-width: 600px;
         }
+
         .service_btn {
           @include btn($light_blue, $blue);
         }
       }
     }
+
     .guarantee {
       display: grid;
       grid-template-columns: 1fr 1fr;
       background-color: $light_grey;
       padding: 0px 25%;
       padding-bottom: 40px;
+
       @media screen and (max-width: $tablet_bp) {
         grid-template-columns: 1fr;
         grid-auto-flow: row;
         padding: 25px;
       }
+
       .guarantee_header {
         grid-column: span 2;
         text-align: center;
+
         @media screen and (max-width: $tablet_bp) {
           grid-column: span 1;
         }
       }
+
       .guarantee_header {
         margin: 25px;
+
         p:nth-child(1) {
           @include sys_font(700, 30px, $black, 1.1, -1px);
         }
+
         p:nth-child(2) {
           @include sys_font(400, 20px, $black, 1, -1px);
         }
       }
+
       .guarantee_item {
         display: grid;
         grid-gap: 15px;
         grid-template-columns: auto 1fr;
         margin: 15px 25px;
+
         p {
           margin: 0 0;
         }
+
         .guarantee_title {
           @include sys_font(700, 15px, $black, 1.4, 1px);
         }
+
         .guarantee_desc {
           @include sys_font(400, 14px, $black, 1.6, 0px);
           margin-top: 8px;
         }
       }
     }
+
     .contact_us {
       display: grid;
       grid-template-columns: auto auto;
       justify-content: center;
       padding: 50px 10%;
-      background-image: url('../images/contact_us.jpg');
+      background-image: url("../images/contact_us.jpg");
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
       color: white;
+
       @media screen and (max-width: $tablet_bp) {
         grid-template-columns: 1fr;
         padding: 25px 1%;
       }
+
       .contact_us_header {
         padding: 100px 60px;
+
         @media screen and (max-width: $tablet_bp) {
           padding: 0px 30px;
           padding-top: 20px;
           display: grid;
           justify-content: center;
         }
+
         .contact_us_title {
-          @include sys_font(700, 50px, 'white', 1.1, -1px);
+          @include sys_font(700, 50px, "white", 1.1, -1px);
         }
+
         .contact_email,
         .contact_phone {
           display: grid;
@@ -410,42 +476,51 @@
           grid-auto-flow: column;
           align-items: center;
           margin: 15px 0px;
+
           div {
             b {
-              @include sys_font(700, 30px, 'white', 1.4, 1px);
+              @include sys_font(700, 30px, "white", 1.4, 1px);
             }
-            @include sys_font(400, 25px, 'white', 1.4, 0px);
+
+            @include sys_font(400, 25px, "white", 1.4, 0px);
             display: grid;
           }
+
           span {
             padding: 15px;
             font-size: 25px;
             color: $light_blue;
+
             @media screen and (max-width: $tablet_bp) {
               // padding: 22px;
             }
           }
         }
       }
+
       .contact_us_form {
         padding: 60px 20px;
         min-width: 700px;
+
         .form_title {
           text-align: center;
           background-color: $light_blue;
           padding: 15px;
-          @include sys_font(700, 25px, 'white', 1.1, -1px);
+          @include sys_font(700, 25px, "white", 1.1, -1px);
         }
+
         form {
           background-color: rgba(255, 255, 255, 1);
           color: $black;
           padding: 20px;
+
           select {
             width: 85%;
             margin-left: 40px;
             font-size: 25px;
             color: grey;
           }
+
           .msgSubmitSuccess {
             @include sys_font(700, 16px, #16be45, 1.1, 0px);
             border: 1px solid #16be45;
@@ -453,23 +528,29 @@
             padding: 15px;
             margin: 15px;
           }
+
           .msgSubmitFail {
             color: red;
             border: 1px solid red;
           }
+
           label {
             font-size: 20px;
+
             @media screen and (max-width: $tablet_bp) {
               font-size: 22px;
             }
           }
+
           i {
             color: #7c7070;
           }
+
           .form_section {
             text-align: center;
             @include sys_font(600, 20px, $light_blue, 1.1, 1px);
           }
+
           .submit_btn {
             @include btn($blue, $light_blue);
             padding: 10px 35px;
@@ -477,6 +558,7 @@
         }
       }
     }
+
     .faq {
       background-image: url(../images/faq.jpg);
       background-position: top;
@@ -485,21 +567,26 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding: 3% 0;
+
       @media screen and (max-width: $tablet_bp) {
         grid-template-columns: 1fr;
         padding: 25px 2%;
         text-align: center;
       }
+
       .faq_header {
         @include sys_font(900, 50px, black, 1.1px, -1px);
         line-height: inherit;
       }
+
       .faq_list {
         max-width: 700px;
         border: none;
         box-shadow: none;
+
         li {
           margin: 20px;
+
           .collapsible-header {
             background-color: $blue;
             border: none;
@@ -507,6 +594,7 @@
             align-items: center;
             text-transform: uppercase;
           }
+
           .collapsible-body {
             background-color: rgba(255, 255, 255, 0.9);
             @include sys_font(400, 16px, black, 1.7, 0px);
@@ -520,6 +608,7 @@
     background-color: $grey;
     display: grid;
     justify-content: center;
+
     .footer_content {
       text-align: center;
       padding-top: 30px;
@@ -528,23 +617,29 @@
       grid-gap: 20px;
       grid-template-columns: repeat(4, 1fr);
       color: white;
+
       @media screen and (max-width: $tablet_bp) {
         grid-template-columns: 1fr 1fr;
         max-width: 100%;
         padding: 20px 9%;
       }
+
       max-width: 70vw;
     }
+
     .footer_section {
       @include sys_font(700, 15px, white, 1.7, 0px);
     }
+
     .footer_line {
       border-top: 2px solid $light_blue;
       padding-top: 15px;
     }
+
     .copyright {
       grid-column: span 4;
       background-color: #21282b;
+
       @media screen and (max-width: $tablet_bp) {
         grid-column: span 2;
       }
@@ -559,7 +654,8 @@
 
 nav {
   background-color: $blue;
+
   .brand-logo {
-    font-family: 'Racing Sans One', cursive;
+    font-family: "Racing Sans One", cursive;
   }
 }

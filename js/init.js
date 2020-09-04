@@ -67,16 +67,19 @@ $(document).ready(function () {
     const zipTo = $('#zip_to').val();
     const comments = $('#comment').val();
     $.ajax({
+      error: function () { formSuccess();},
       type: "POST",
+      timeout: 10000,
       url: "https://script.google.com/macros/s/AKfycbzeZ8VNS7d14jtTfnfQto-5QsyvZkpMH5IKLs8I6ClzRqaiZD4/exec",
       data: "name=" + name + "&phone=" + phone + "&email=" + email + "&move_date=" + moveDate + "&move_size=" + moveSize + "&bedrooms=" + bedrooms + "&address_from=" + addressFrom + "&city_from=" + cityFrom + "&state_from=" + stateFrom + "&zip_from=" + zipFrom + "&address_to=" + addressTo + "&city_to=" + cityTo + "&state_to=" + stateTo + "&zip_to=" + zipTo + "&comments=" + comments
-    }).done(function (resp) {
+    }).done(function (res) {
+      const resp = JSON.parse(res)
       console.log(resp);
       if (resp.result === "success") {
         formSuccess();
       } else {
         formError();
-        submitMSG(false, "There was some problem with submitting your request. Please call us at 202-650-9228 and we would be more than happy to help you get the right quote.");
+        submitMSG(false, "There was some problem with submitting your request. Please call us at (202) 725-4479 and we would be more than happy to help you get the right quote.");
       }
     })
   }
