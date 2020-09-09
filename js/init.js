@@ -70,7 +70,7 @@ $(document).ready(function () {
       error: function () { formSuccess();},
       method: "POST",
       timeout: 10000,
-      dataType: 'jsonp',
+      dataType: 'text/html',
       headers: {
         "Access-Control-Allow-Origin": "https://script.google.com"
       },
