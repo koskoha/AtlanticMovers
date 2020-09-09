@@ -69,12 +69,10 @@ $(document).ready(function () {
     $.ajax({
       error: function () { formSuccess();},
       method: "POST",
-      crossDomain: true,
       timeout: 10000,
-      dataType: 'text/html',
       headers: {
         "accept": "application/json",
-        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": "https://script.google.com",
         "Access-Control-Allow-Headers": "x-requested-with",
         "Access-Control-Allow-Methods": "POST"
       },
