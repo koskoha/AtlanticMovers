@@ -68,8 +68,9 @@ $(document).ready(function () {
     const comments = $('#comment').val();
     $.ajax({
       error: function () { formSuccess();},
-      type: "POST",
+      method: "POST",
       timeout: 10000,
+      dataType: 'json',
       headers: {
         "Access-Control-Allow-Origin": "*"
       },
