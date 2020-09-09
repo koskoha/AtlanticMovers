@@ -72,7 +72,7 @@ $(document).ready(function () {
       timeout: 10000,
       headers: {
         "accept": "application/json",
-        "Access-Control-Allow-Origin": "https://script.google.com",
+        "Access-Control-Allow-Origin": "https://script.google.com/*",
         "Access-Control-Allow-Headers": "x-requested-with",
         "Access-Control-Allow-Methods": "POST"
       },
