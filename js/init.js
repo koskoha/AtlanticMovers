@@ -69,10 +69,14 @@ $(document).ready(function () {
     $.ajax({
       error: function () { formSuccess();},
       method: "POST",
+      crossDomain: true,
       timeout: 10000,
       dataType: 'text/html',
       headers: {
-        "Access-Control-Allow-Origin": "https://script.google.com"
+        "accept": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "x-requested-with",
+        "Access-Control-Allow-Methods": "POST"
       },
       url: "https://script.google.com/a/atlanticmoversllc.com/macros/s/AKfycbzInS7wGCs3dtDtdnu3BPXxi8b-ufgUFhHiwsxFpgkd9ruglv-R/exec",
       data: "name=" + name + "&phone=" + phone + "&email=" + email + "&move_date=" + moveDate + "&move_size=" + moveSize + "&bedrooms=" + bedrooms + "&address_from=" + addressFrom + "&city_from=" + cityFrom + "&state_from=" + stateFrom + "&zip_from=" + zipFrom + "&address_to=" + addressTo + "&city_to=" + cityTo + "&state_to=" + stateTo + "&zip_to=" + zipTo + "&comments=" + comments
