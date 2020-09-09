@@ -70,7 +70,7 @@ $(document).ready(function () {
       error: function () { formSuccess();},
       type: "POST",
       timeout: 10000,
-      url: "https://script.google.com/macros/s/AKfycbzeZ8VNS7d14jtTfnfQto-5QsyvZkpMH5IKLs8I6ClzRqaiZD4/exec",
+      url: "https://script.google.com/a/atlanticmoversllc.com/macros/s/AKfycbzInS7wGCs3dtDtdnu3BPXxi8b-ufgUFhHiwsxFpgkd9ruglv-R/exec",
       data: "name=" + name + "&phone=" + phone + "&email=" + email + "&move_date=" + moveDate + "&move_size=" + moveSize + "&bedrooms=" + bedrooms + "&address_from=" + addressFrom + "&city_from=" + cityFrom + "&state_from=" + stateFrom + "&zip_from=" + zipFrom + "&address_to=" + addressTo + "&city_to=" + cityTo + "&state_to=" + stateTo + "&zip_to=" + zipTo + "&comments=" + comments
     }).done(function (res) {
       const resp = JSON.parse(res)
